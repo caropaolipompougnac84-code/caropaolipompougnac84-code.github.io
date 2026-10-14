@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le théâtre : lire, dire, jouer (bac pro)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito+Sans:wght@400;700&display=swap">
+<style>
+:root{--bg:#faf6ee;--card:#fff;--ink:#241c1f;--mut:#6a5d60;--red:#7a1f2e;--gold:#b8860b;--line:#e6dccb;--ok:#1d7a46;--ko:#b3261e;--hl:#f3e6c4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1418;--card:#261d22;--ink:#f3ebe0;--mut:#b9aaa6;--red:#e08a98;--gold:#e0b84a;--line:#3a2d34;--ok:#5fd08f;--ko:#ff8a80;--hl:#3b2f1d}}
+:root[data-theme="dark"]{--bg:#1a1418;--card:#261d22;--ink:#f3ebe0;--mut:#b9aaa6;--red:#e08a98;--gold:#e0b84a;--line:#3a2d34;--ok:#5fd08f;--ko:#ff8a80;--hl:#3b2f1d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.2;margin:.2em 0 .5em}
+header{background:#5a1220;color:#fff;text-align:center;padding:22px 14px 14px}
+header h1{font-size:1.9rem;margin:6px 0}
+header p{margin:0 auto;max-width:34em;color:#f1dcc0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;overflow-x:auto;background:var(--bg);padding:8px 10px;border-bottom:2px solid var(--gold)}
+nav button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 14px;border-radius:20px;font:700 15px "Nunito Sans",sans-serif;cursor:pointer}
+nav button[aria-selected=true]{background:var(--red);color:#fff;border-color:var(--red)}
+main{max-width:46rem;margin:0 auto;padding:14px}
+section{display:none}section.on{display:block}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:12px 0}
+.goal{background:var(--hl);border-left:5px solid var(--gold);padding:10px 12px;border-radius:6px}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin:8px 0;padding:0}
+summary{cursor:pointer;padding:11px 14px;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:before{content:"+";display:inline-block;width:1.2em;color:var(--red);font-weight:900}
+details[open] summary:before{content:"\2212"}
+details>div{padding:0 14px 12px;border-top:1px dashed var(--line)}
+.ex{font-style:italic;color:var(--mut)}
+.fig{overflow-x:auto;text-align:center}
+svg{max-width:100%;height:auto}
+.q{margin:14px 0}.q p{font-weight:700;margin:0 0 6px}
+.opt{display:block;width:100%;text-align:left;margin:5px 0;padding:10px 12px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;font:inherit;cursor:pointer}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}
+.opt.ko{border-color:var(--ko);background:color-mix(in srgb,var(--ko) 15%,var(--card))}
+.big{display:block;margin:10px auto;padding:12px 22px;border:0;border-radius:26px;background:var(--red);color:#fff;font:700 17px "Nunito Sans",sans-serif;cursor:pointer}
+#imp{font-size:1.05rem}
+#imp b{color:var(--red)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--hl)}
+.wrap{overflow-x:auto}
+a{color:var(--red)}
+.pl{font-family:Georgia,serif;background:var(--card);border-left:4px solid var(--red);padding:8px 12px;margin:10px 0}
+button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+<svg width="150" height="58" viewBox="0 0 150 58" role="img" aria-label="Deux masques de théâtre">
+<g stroke="#e0b84a" stroke-width="2.5" fill="#f1dcc0"><path d="M18 6h40v22c0 14-9 22-20 22S18 42 18 28z"/><path d="M92 6h40v22c0 14-9 22-20 22S92 42 92 28z" fill="#e0b84a"/></g>
+<g fill="#5a1220"><ellipse cx="29" cy="22" rx="5" ry="3"/><ellipse cx="47" cy="22" rx="5" ry="3"/><ellipse cx="103" cy="24" rx="5" ry="3"/><ellipse cx="121" cy="24" rx="5" ry="3"/></g>
+<path d="M28 36q10 10 20 0" stroke="#5a1220" stroke-width="3" fill="none"/><path d="M102 42q10-10 20 0" stroke="#5a1220" stroke-width="3" fill="none"/></svg>
+<h1>Le théâtre : lire, dire, jouer</h1>
+<p>Cinq onglets pour comprendre une pièce, la mettre en voix et la jouer. Clique sur les <b>+</b> pour découvrir les réponses.</p>
+<a class="big" id="dl" href="fiche-eleve-theatre.pdf" target="_blank" rel="noopener" style="background:#e0b84a;color:#241c1f;display:inline-block;text-decoration:none">Télécharger la fiche élève (PDF à imprimer)</a>
+</header>
+<nav role="tablist" id="tabs"></nav>
+<main>
+
+<section id="t0">
+<h2>Découvrir le théâtre</h2>
+<div class="goal"><b>Objectif.</b> Savoir ce qu'est un texte de théâtre, repérer les genres et se repérer sur une scène.</div>
+<h3>La scène vue du dessus</h3>
+<div class="fig"><svg width="340" height="240" viewBox="0 0 340 240" role="img" aria-label="Plan d'une scène de théâtre avec cour, jardin, fond de scène et public">
+<rect x="40" y="10" width="260" height="150" rx="6" fill="#7a1f2e" opacity=".85"/>
+<g stroke="#f1dcc0" stroke-dasharray="5 4" fill="none"><path d="M170 10v150M40 85h260"/></g>
+<g fill="#fff" font-size="14" font-family="sans-serif" text-anchor="middle"><text x="170" y="30">fond de scène</text><text x="170" y="150">avant-scène</text><text x="95" y="90">jardin</text><text x="245" y="90">cour</text></g>
+<g fill="#e0b84a"><rect x="60" y="190" width="30" height="22" rx="5"/><rect x="100" y="190" width="30" height="22" rx="5"/><rect x="140" y="190" width="30" height="22" rx="5"/><rect x="180" y="190" width="30" height="22" rx="5"/><rect x="220" y="190" width="30" height="22" rx="5"/><rect x="260" y="190" width="30" height="22" rx="5"/></g>
+<text x="170" y="232" text-anchor="middle" font-size="14" font-family="sans-serif" fill="currentColor">le public</text></svg></div>
+<p class="ex">Sur ce plan, on est du point de vue du public, qui regarde la scène depuis le bas.</p>
+<details><summary>Où est la cour ? Où est le jardin ?</summary><div><p>Pour le <b>public</b>, le <b>jardin</b> est à gauche et la <b>cour</b> à droite. Pour l'acteur qui regarde la salle, c'est l'inverse. Les deux mots viennent des Tuileries : la cour du palais d'un côté, le jardin de l'autre.</p></div></details>
+<p>Pour voir de vraies photos : <a href="https://www.google.com/search?tbm=isch&q=sc%C3%A8ne+de+th%C3%A9%C3%A2tre+cour+jardin+plateau" target="_blank" rel="noopener">des plateaux de théâtre</a> et <a href="https://www.google.com/search?tbm=isch&q=th%C3%A9%C3%A2tre+%C3%A0+l%27italienne+salle+rideau+rouge" target="_blank" rel="noopener">une salle à l'italienne</a>.</p>
+<h3>Questions de compréhension</h3>
+<details><summary>Un texte de théâtre, qu'est-ce qui le distingue d'un roman ?</summary><div><p>Il est écrit pour être <b>joué devant un public</b>. Il contient surtout des répliques (ce que disent les personnages) et des <b>didascalies</b> (les indications de jeu, de décor, de ton, souvent en italique).</p></div></details>
+<details><summary>Quels sont les grands genres théâtraux ?</summary><div><p><b>Tragédie</b> : destin fatal, personnages nobles, fin malheureuse.<br><b>Comédie</b> : faire rire, souvent pour corriger les défauts des hommes.<br><b>Drame</b> : mélange de grave et de comique, personnages divers.<br><b>Farce</b> : rire franc, coups de bâton et situations absurdes.</p></div></details>
+<details><summary>Pourquoi dit-on qu'au théâtre il y a une « double énonciation » ?</summary><div><p>Un personnage parle à un autre personnage, mais l'auteur s'adresse en même temps au <b>public</b>. Le spectateur sait parfois plus de choses que les personnages : c'est ce qui crée le rire ou la tension.</p></div></details>
+<details><summary>Que fait l'auteur quand il écrit « Il sort en claquant la porte » ?</summary><div><p>C'est une <b>didascalie</b> : elle dit comment jouer. Elle ne se prononce pas à voix haute, elle se joue.</p></div></details>
+<h3>Un extrait pour entrer dans le jeu</h3>
+<div class="pl">« Que diable allait-il faire dans cette galère ? » <span class="ex">(Molière, Les Fourberies de Scapin)</span></div>
+<details><summary>Dis cette phrase de trois façons différentes. Qu'est-ce qui change ?</summary><div><p>Colère, ironie, désespoir. Le sens des mots reste le même, mais le <b>ton</b>, le <b>rythme</b> et le <b>regard</b> changent tout. C'est le travail de l'acteur.</p></div></details>
+<p>Pour voir des mises en scène : <a href="https://www.youtube.com/results?search_query=Molière+Les+Fourberies+de+Scapin+mise+en+scène" target="_blank" rel="noopener">vidéos sur Scapin</a> et <a href="https://www.youtube.com/results?search_query=Cyrano+de+Bergerac+tirade+du+nez" target="_blank" rel="noopener">la tirade du nez de Cyrano</a>.</p>
+</section>
+
+<section id="t1">
+<h2>Le vocabulaire du théâtre</h2>
+<div class="goal"><b>Objectif.</b> Maîtriser les mots pour parler d'une pièce. Réponds au quiz, puis ouvre les fiches.</div>
+<div class="fig"><svg width="320" height="170" viewBox="0 0 320 170" role="img" aria-label="Un rideau rouge ouvert sur une scène éclairée, avec le trou du souffleur au premier plan"><rect x="0" y="0" width="320" height="170" fill="#2a1a20"/><path d="M0 0h320v22H0z" fill="#b8860b"/><path d="M0 22c30 30 40 80 30 140H0z" fill="#7a1f2e"/><path d="M320 22c-30 30-40 80-30 140h30z" fill="#7a1f2e"/><path d="M30 22c20 25 25 70 16 140" stroke="#5a1220" stroke-width="4" fill="none"/><path d="M290 22c-20 25-25 70-16 140" stroke="#5a1220" stroke-width="4" fill="none"/><path d="M140 22l-40 118h120z" fill="#f1dcc0" opacity=".18"/><rect x="40" y="140" width="240" height="20" fill="#6b4a2b"/><rect x="148" y="146" width="24" height="10" fill="#1a1418"/><g fill="#fff" font-size="11" font-family="sans-serif" text-anchor="middle"><text x="160" y="15">le rideau</text><text x="160" y="134">la scène</text><text x="160" y="168">le trou du souffleur</text></g></svg></div>
+<div id="quiz1"></div>
+<h3>Fiches à ouvrir</h3>
+<details><summary>Acte, scène, réplique</summary><div><p>L'<b>acte</b> est une grande partie de la pièce. La <b>scène</b> change quand un personnage entre ou sort. La <b>réplique</b> est ce que dit un personnage avant qu'un autre ne réponde.</p></div></details>
+<details><summary>Monologue, tirade, aparté</summary><div><p><b>Monologue</b> : un personnage seul parle (à lui-même ou au public).<br><b>Tirade</b> : longue réplique, en présence d'autres personnages.<br><b>Aparté</b> : phrase que le personnage dit « à part », que les autres sont censés ne pas entendre.</p></div></details>
+<details><summary>Stichomythie</summary><div><p>Échange de répliques très courtes, vives, qui se répondent comme un match de ping-pong. Elle donne du rythme à un affrontement.</p></div></details>
+<details><summary>Quiproquo</summary><div><p>Malentendu : un personnage croit qu'on parle d'une chose alors qu'on parle d'une autre. Le public, lui, comprend tout.</p></div></details>
+<details><summary>Exposition, nœud, dénouement, coup de théâtre</summary><div><p><b>Exposition</b> : on présente lieu, époque, personnages.<br><b>Nœud</b> : le problème se complique.<br><b>Dénouement</b> : le problème se règle.<br><b>Coup de théâtre</b> : retournement inattendu.</p></div></details>
+</section>
+
+<section id="t2">
+<h2>Les figures de style au théâtre</h2>
+<div class="goal"><b>Objectif.</b> Repérer une figure, dire son effet, puis la faire sentir à voix haute.</div>
+<div class="fig"><svg width="320" height="110" viewBox="0 0 320 110" role="img" aria-label="Trois visages : hyperbole, ironie, litote"><g fill="#e8d3a6" stroke="#7a1f2e" stroke-width="3"><circle cx="55" cy="45" r="34"/><circle cx="160" cy="45" r="34"/><circle cx="265" cy="45" r="34"/></g><g fill="#241c1f"><circle cx="43" cy="38" r="6"/><circle cx="67" cy="38" r="6"/><circle cx="148" cy="40" r="4"/><circle cx="172" cy="40" r="4"/><circle cx="256" cy="42" r="3"/><circle cx="274" cy="42" r="3"/></g><ellipse cx="55" cy="62" rx="13" ry="10" fill="#7a1f2e"/><path d="M146 62q14 10 28 -2" stroke="#241c1f" stroke-width="3" fill="none"/><path d="M140 28l18-6" stroke="#241c1f" stroke-width="3"/><path d="M256 62h18" stroke="#241c1f" stroke-width="3"/><g font-size="13" font-family="sans-serif" text-anchor="middle" fill="currentColor"><text x="55" y="102">hyperbole</text><text x="160" y="102">ironie</text><text x="265" y="102">litote</text></g></svg></div>
+<details><summary>L'hyperbole (exagération)</summary><div><p>Elle grossit la réalité pour faire rire ou impressionner.</p><p class="ex">« C'est un roc ! c'est un pic ! c'est un cap ! » (Rostand, Cyrano de Bergerac)</p><p><b>Effet :</b> comique, spectaculaire. Au jeu : voix qui monte, gestes larges.</p></div></details>
+<details><summary>L'antithèse (opposition)</summary><div><p>Elle rapproche deux idées contraires.</p><p class="ex">« Rodrigue, as-tu du cœur ? » puis « Je suis jeune, il est vrai, mais aux âmes bien nées... » (Corneille, Le Cid) : jeunesse et courage s'opposent.</p><p><b>Effet :</b> montre un conflit intérieur. Au jeu : changer de ton entre les deux idées.</p></div></details>
+<details><summary>La litote (dire peu pour suggérer beaucoup)</summary><div><p class="ex">« Va, je ne te hais point. » (Corneille, Le Cid) veut dire « je t'aime ».</p><p><b>Effet :</b> émotion retenue, pudeur. Au jeu : voix basse, silence avant la réplique.</p></div></details>
+<details><summary>L'ironie</summary><div><p>On dit le contraire de ce qu'on pense. Exemple dans un atelier : « Bravo, quel beau travail ! » devant une pièce ratée.</p><p><b>Effet :</b> critique ou moquerie. Au jeu : ton trop gentil, sourcil levé.</p></div></details>
+<details><summary>La répétition et l'anaphore</summary><div><p>On répète un mot ou un début de phrase. Chez Molière, Harpagon obsédé par l'argent répète « sans dot ! » à chaque objection.</p><p><b>Effet :</b> montre une obsession, crée un comique de répétition.</p></div></details>
+<details><summary>La gradation et l'accumulation</summary><div><p>Gradation : des mots de plus en plus forts. Accumulation : une longue liste. Exemple : « Il est en retard, il est sale, il est bruyant, il est insupportable ! »</p><p><b>Effet :</b> la colère monte. Au jeu : on accélère et on hausse la voix.</p></div></details>
+<details><summary>L'euphémisme et la périphrase</summary><div><p>Euphémisme : adoucir une réalité dure (« il nous a quittés »). Périphrase : tourner autour du mot (« le grand couturier de la rue d'à côté »).</p></div></details>
+<h3>Les formes du comique</h3>
+<div class="wrap"><table><tr><th>Comique</th><th>Comment ça marche</th><th>Exemple à jouer</th></tr>
+<tr><td>de gestes</td><td>corps, chutes, coups, grimaces</td><td>glisser sur une peau de banane</td></tr>
+<tr><td>de mots</td><td>jeux de mots, déformations, jargon</td><td>le client qui comprend « câble » au lieu de « cable »</td></tr>
+<tr><td>de situation</td><td>quiproquo, cache-cache, erreur</td><td>deux personnes parlent de choses différentes</td></tr>
+<tr><td>de caractère</td><td>un défaut poussé à l'extrême</td><td>l'avare, le menteur, le vaniteux</td></tr>
+<tr><td>de répétition</td><td>même geste ou même phrase qui revient</td><td>le même refrain à chaque entrée</td></tr></table></div>
+<h3>Entraîne-toi</h3>
+<div id="quiz2"></div>
+</section>
+
+<section id="t5">
+<h2>Une pièce classique : Les Fourberies de Scapin</h2>
+<div class="goal"><b>Pourquoi cette pièce ?</b> Un valet sans le sou berne deux vieux pères riches. C'est rapide, drôle, très jouable, et on y parle d'argent, de pouvoir et de ruse. Les élèves de métier y reconnaissent vite le débrouillard.</div>
+<div class="fig"><svg width="320" height="130" viewBox="0 0 320 130" role="img" aria-label="Un sac et un bateau, deux scènes célèbres de la pièce"><g stroke="#7a1f2e" stroke-width="3" fill="#e8d3a6"><path d="M40 40q30-30 60 0l10 70q-40 14-80 0z"/><path d="M200 85h100l-14 26h-72z" fill="#b8860b"/></g><path d="M250 85V25l38 40z" fill="#f3ebe0" stroke="#7a1f2e" stroke-width="3"/><path d="M250 25v60" stroke="#7a1f2e" stroke-width="3"/><path d="M185 118q15-8 30 0t30 0 30 0 30 0 30 0" stroke="#3b7ea8" stroke-width="3" fill="none"/><text x="70" y="122" text-anchor="middle" font-size="13" font-family="sans-serif" fill="currentColor">le sac</text><text x="255" y="14" text-anchor="middle" font-size="13" font-family="sans-serif" fill="currentColor">la galère</text></svg></div>
+<h3>Fiche d'identité</h3>
+<div class="box"><p><b>Auteur :</b> Molière, 1671.<br><b>Genre :</b> comédie en trois actes, en prose, avec beaucoup de farce.<br><b>Personnages :</b> Scapin (valet de Léandre), Silvestre (valet d'Octave), les deux jeunes gens Octave et Léandre, leurs pères Argante et Géronte, deux jeunes filles, Hyacinte et Zerbinette.</p></div>
+<h3>L'histoire en trois temps</h3>
+<details><summary>Acte I : le problème</summary><div><p>Pendant l'absence de leurs pères, Octave et Léandre ont fait ce qu'ils voulaient : l'un s'est marié en secret, l'autre est amoureux d'une jeune fille que son père n'acceptera pas. Les pères rentrent. Panique. Les jeunes gens supplient Scapin de les sauver.</p></div></details>
+<details><summary>Acte II : les ruses</summary><div><p>Scapin invente des histoires pour soutirer de l'argent aux deux pères. Dans la plus célèbre, il raconte à Géronte que son fils a été enlevé sur une galère et qu'il faut payer une rançon.</p></div></details>
+<details><summary>Acte III : la vengeance et la fin</summary><div><p>Scapin règle ses comptes avec Géronte, puis tout s'éclaire : les deux jeunes filles se révèlent être des filles que les pères avaient perdues. Les mariages sont possibles. Scapin fait semblant d'être mourant pour obtenir le pardon.</p></div></details>
+<h3>Parcours de lecture : cinq scènes à lire et à jouer</h3>
+<details><summary>1. La scène d'ouverture : Scapin est appelé au secours</summary><div><p><b>Questions.</b> Qui demande de l'aide à qui ? Comment Scapin se fait-il prier ? Qu'est-ce que cela montre de son caractère ?</p><p><b>Réponses.</b> Les deux jeunes gens, mal pris, supplient le valet. Scapin se fait prier, flatter, presque implorer : il aime sentir qu'on a besoin de lui. C'est un homme fier de son talent.</p></div></details>
+<details><summary>2. La galère (acte II, scène 7)</summary><div><p><b>Questions.</b> Quelle histoire Scapin invente-t-il ? Quelle phrase revient comme un refrain ? Quel comique est utilisé ?</p><p><b>Réponses.</b> Il invente un enlèvement sur une galère turque. Le refrain est « Que diable allait-il faire dans cette galère ? », que Géronte répète sans cesse. Comique de <b>répétition</b> et de <b>caractère</b> : l'avare pleure surtout pour son argent.</p></div></details>
+<details><summary>3. Le récit de Zerbinette (acte III)</summary><div><p><b>Questions.</b> Que raconte Zerbinette ? À qui ? Que sait le public que Géronte ne sait pas ?</p><p><b>Réponses.</b> Elle raconte en riant la ruse de Scapin... à Géronte lui-même, sans le savoir. Le public sait qu'il est la victime : c'est de l'<b>ironie dramatique</b> et un grand moment de comique de situation.</p></div></details>
+<details><summary>4. La scène du sac (acte III)</summary><div><p><b>Questions.</b> Où Géronte se cache-t-il ? Que lui arrive-t-il ? Quel comique domine ?</p><p><b>Réponses.</b> Scapin fait entrer Géronte dans un sac pour le cacher de prétendus ennemis, puis lui donne des coups de bâton en imitant plusieurs voix. Comique de <b>gestes</b> et de <b>farce</b> : tout passe par le corps et la voix.</p></div></details>
+<details><summary>5. La fausse mort de Scapin (dénouement)</summary><div><p><b>Questions.</b> Pourquoi Scapin joue-t-il le mourant ? Que veut-il obtenir ? Que pensez-vous de cette fin ?</p><p><b>Réponses.</b> Il joue la comédie pour obtenir le pardon de Géronte, qui cède. On peut débattre : le valet est-il puni, ou gagne-t-il ? Réponse libre, à justifier avec la pièce.</p></div></details>
+<h3>Pour débattre en classe</h3>
+<details><summary>Scapin est-il un héros ou un menteur ?</summary><div><p>Il ment et il trompe, mais il rend service à des jeunes gens et se venge de maîtres injustes. Chacun défend sa position avec un exemple pris dans la pièce.</p></div></details>
+<details><summary>Que dit la pièce de l'argent et du pouvoir ?</summary><div><p>Les pères tiennent l'argent et décident de tout. Le valet, lui, n'a que sa ruse. Molière fait rire, mais il montre aussi des rapports de force.</p></div></details>
+<h3>Quiz sur la pièce</h3>
+<div id="quiz4"></div>
+<p>À voir : <a href="https://www.youtube.com/results?search_query=Les+Fourberies+de+Scapin+Comédie-Française+scène+du+sac" target="_blank" rel="noopener">la scène du sac en vidéo</a> et <a href="https://www.youtube.com/results?search_query=Scapin+galère+Géronte+scène+7+acte+II" target="_blank" rel="noopener">la scène de la galère</a>.</p>
+</section>
+
+<section id="t7">
+<h2>Une pièce contemporaine : Art, de Yasmina Reza</h2>
+<div class="goal"><b>Pourquoi cette pièce ?</b> Trois amis se disputent à cause d'un tableau tout blanc. On rit, mais on parle d'amitié, de goût, d'orgueil et de ce qu'on n'ose pas se dire. Texte à lire en livre : la page propose les questions et les jeux.</div>
+<div class="fig"><svg width="220" height="160" viewBox="0 0 220 160" role="img" aria-label="Un grand tableau blanc avec de fines lignes blanches"><rect x="20" y="10" width="180" height="130" fill="#fff" stroke="#6a5d60" stroke-width="6"/><g stroke="#ece6d8" stroke-width="3"><path d="M40 50l140 8M40 85l140-6M60 115l120 4"/></g><text x="110" y="155" text-anchor="middle" font-size="13" font-family="sans-serif" fill="currentColor">Un tableau blanc : 200 000 francs</text></svg></div>
+<h3>Fiche d'identité</h3>
+<div class="box"><p><b>Autrice :</b> Yasmina Reza, créée en 1994.<br><b>Genre :</b> comédie contemporaine, très dialoguée.<br><b>Personnages :</b> Serge, qui achète le tableau ; Marc, qui le juge absurde ; Yvan, pris entre les deux.</p></div>
+<h3>L'histoire en quelques lignes</h3>
+<details><summary>Le point de départ</summary><div><p>Serge a acheté un tableau presque entièrement blanc, très cher. Marc le voit et s'indigne. La dispute porte sur le tableau, mais elle révèle surtout ce que chacun pense vraiment de l'autre.</p></div></details>
+<details><summary>La dispute s'envenime</summary><div><p>Yvan essaie de calmer tout le monde, puis finit par exploser lui aussi. Les reproches anciens ressortent, les amitiés se fissurent.</p></div></details>
+<details><summary>La fin</summary><div><p>Un geste fort, sur le tableau, force les trois amis à se regarder en face. La fin laisse entendre que l'amitié peut se réparer, à condition de se dire les choses.</p></div></details>
+<h3>Questions de lecture</h3>
+<details><summary>Qui a raison, Serge ou Marc ?</summary><div><p>Personne tout à fait. Serge défend ses goûts, Marc défend sa vision de l'amitié. À chacun de justifier son avis avec une réplique de la pièce.</p></div></details>
+<details><summary>Pourquoi le public rit-il ? De quoi ?</summary><div><p>De la <b>mauvaise foi</b> des personnages (comique de caractère), de leurs <b>exagérations</b> (hyperbole) et de leurs <b>sous-entendus</b>. On rit aussi parce qu'on se reconnaît.</p></div></details>
+<details><summary>Que gagne-t-on à voir les personnages parler au public ?</summary><div><p>On entend leurs pensées secrètes : ils disent au public ce qu'ils ne disent pas aux amis. C'est un effet de <b>double énonciation</b>.</p></div></details>
+<details><summary>Quelles figures de style repères-tu dans leurs disputes ?</summary><div><p>Ironie, hyperbole, antithèse, accumulation de reproches. À relever dans l'extrait choisi en classe.</p></div></details>
+<h3>Pour débattre</h3>
+<details><summary>Un tableau blanc peut-il être de l'art ?</summary><div><p>Chacun prend position et cite un argument. Pour aller plus loin : un artiste russe, Malevitch, a déjà peint des carrés blancs sur fond blanc. <a href="https://www.google.com/search?tbm=isch&q=Malevitch+Blanc+sur+blanc" target="_blank" rel="noopener">Voir les images</a>.</p></div></details>
+<details><summary>Peut-on rester ami avec quelqu'un qui n'a pas les mêmes goûts ?</summary><div><p>Réponse libre, à justifier. On peut en profiter pour parler de respect et de franchise.</p></div></details>
+<h3>Quiz sur la pièce</h3>
+<div id="quiz5"></div>
+<h3>Écriture guidée : une dispute à trois</h3>
+<div class="box"><p><b>Consigne.</b> Écris une scène de dispute entre trois amis à propos d'un objet à la mode (une paire de baskets très chères, un scooter, un tatouage).</p><p><b>Plan.</b> 1. L'un montre son achat avec fierté. 2. Le second critique. 3. Le troisième essaie de calmer. 4. Un aparté au public pour chacun. 5. Une chute inattendue.</p>
+<details><summary>Voir un début possible</summary><div><p class="ex">LÉO <i>(il pose la boîte sur la table)</i>. Regardez-moi ça.<br>NINA. Combien ?<br>LÉO. Cent cinquante.<br>NINA. Pour des chaussures ?<br>KARIM <i>(à voix basse, au public)</i>. Je n'ose pas dire que je les trouve belles.</p></div></details></div>
+<p>À voir : <a href="https://www.youtube.com/results?search_query=Yasmina+Reza+Art+pièce+extrait" target="_blank" rel="noopener">extraits de mises en scène d'Art</a>.</p>
+</section>
+
+<section id="t8">
+<h2>Un théâtre qui surprend : Jean-Michel Ribes</h2>
+<div class="goal"><b>Pourquoi cet auteur ?</b> Dans Théâtre sans animaux, ce sont de courtes saynètes drôles et absurdes. Chaque groupe peut en lire une, la jouer et la présenter. C'est idéal pour des élèves qui se lassent vite d'un long texte. Texte à lire en livre : la page propose les questions, les jeux et l'écriture.</div>
+<div class="fig"><svg width="240" height="150" viewBox="0 0 240 150" role="img" aria-label="Une porte seule au milieu d'une scène vide"><rect x="10" y="110" width="220" height="8" fill="#7a1f2e"/><rect x="90" y="20" width="60" height="90" fill="#e8d3a6" stroke="#7a1f2e" stroke-width="4"/><circle cx="138" cy="68" r="4" fill="#7a1f2e"/><text x="120" y="140" text-anchor="middle" font-size="13" font-family="sans-serif" fill="currentColor">Une porte, mais pas de mur</text></svg></div>
+<h3>Qu'est-ce que l'absurde au théâtre ?</h3>
+<details><summary>Définition simple</summary><div><p>Des personnages qui parlent normalement dans une situation qui ne l'est pas. La logique est respectée, mais elle conduit à des choses impossibles. C'est ce décalage qui fait rire.</p></div></details>
+<details><summary>Quels procédés font rire ?</summary><div><p><b>Le décalage</b> : un ton sérieux pour une situation folle.<br><b>Le non-sens</b> : une réponse à côté de la question.<br><b>La répétition</b> : la même idée qui revient.<br><b>L'accumulation</b> : de plus en plus de détails absurdes.</p></div></details>
+<h3>Parcours de lecture, avec n'importe quelle saynète</h3>
+<details><summary>Qui sont les personnages ? Où sommes-nous ?</summary><div><p>Repère le lieu, la situation de départ et les personnages. Demande-toi : qu'est-ce qui est normal ? Qu'est-ce qui ne l'est pas ?</p></div></details>
+<details><summary>Où commence l'absurde ?</summary><div><p>Trouve la première réplique ou la première didascalie qui sort de la logique. Les personnages réagissent-ils comme on s'y attend ?</p></div></details>
+<details><summary>Quelle figure de style repères-tu ?</summary><div><p>Hyperbole, répétition, accumulation, ironie, paradoxe. Cite la phrase et dis l'effet produit.</p></div></details>
+<details><summary>Comment jouer ce passage ?</summary><div><p>Pour que l'absurde marche, il faut jouer sérieux, sans faire rire exprès. Plus l'acteur croit à ce qu'il dit, plus le public rit.</p></div></details>
+<h3>Jeu : l'absurde en deux minutes</h3>
+<div class="box"><p>Tire un lieu et un objet. Les deux joueurs doivent parler normalement, mais l'objet est impossible.</p><p id="abs">Appuie sur le bouton.</p><button class="big" id="goabs">Tirer une situation absurde</button></div>
+<h3>Écriture guidée : ma saynète absurde</h3>
+<div class="box"><p><b>Consigne.</b> Écris une saynète de 8 à 12 répliques. Un personnage vit une situation impossible, l'autre réagit comme si c'était normal.</p><p><b>Règles.</b> 1. Ton très sérieux. 2. Une phrase qui revient trois fois. 3. Une accumulation de détails. 4. Une chute surprenante.</p>
+<details><summary>Voir un exemple</summary><div><p class="ex">LE CLIENT. Bonjour, je voudrais un mardi.<br>LA VENDEUSE. Gros ou petit ?<br>LE CLIENT. Plutôt moyen. Pour dimanche.<br>LA VENDEUSE <i>(elle cherche)</i>. Je n'ai plus que des jeudis.<br>LE CLIENT. Alors je reviendrai hier.</p></div></details></div>
+<h3>Quiz</h3>
+<div id="quiz6"></div>
+<p>À voir : <a href="https://www.youtube.com/results?search_query=Jean-Michel+Ribes+Théâtre+sans+animaux+extrait" target="_blank" rel="noopener">extraits de Théâtre sans animaux</a>.</p>
+</section>
+
+<section id="t9">
+<h2>Le théâtre à Paris : où, qui, comment</h2>
+<div class="goal"><b>Objectif.</b> Savoir où se joue le théâtre, qui le fait vivre et comment s'y rendre. Un théâtre, c'est aussi un monde de métiers, de lieux et de débats.</div>
+<div class="fig"><svg width="280" height="150" viewBox="0 0 280 150" role="img" aria-label="Façade stylisée d'un théâtre avec colonnes et fronton"><path d="M20 50L140 12l120 38z" fill="#7a1f2e"/><rect x="30" y="54" width="220" height="8" fill="#b8860b"/><g fill="#e8d3a6" stroke="#7a1f2e" stroke-width="2"><rect x="42" y="64" width="20" height="66"/><rect x="82" y="64" width="20" height="66"/><rect x="122" y="64" width="20" height="66"/><rect x="162" y="64" width="20" height="66"/><rect x="202" y="64" width="20" height="66"/></g><rect x="20" y="130" width="240" height="10" fill="#6a5d60"/></svg></div>
+<h3>Quelques lieux de théâtre à connaître</h3>
+<details><summary>La Comédie-Française</summary><div><p>Fondée en 1680 sous Louis XIV, c'est la plus ancienne troupe de théâtre de France. On l'appelle la « Maison de Molière ». Elle joue surtout les classiques, mais aussi des auteurs vivants. Salle Richelieu, près du Palais-Royal.</p></div></details>
+<details><summary>L'Odéon, Théâtre de l'Europe</summary><div><p>Un grand théâtre national, ouvert depuis le XVIIIe siècle, qui accueille des mises en scène venues de toute l'Europe.</p></div></details>
+<details><summary>La Colline</summary><div><p>Un théâtre national à Paris, dans le 20e arrondissement, consacré aux écritures d'aujourd'hui.</p></div></details>
+<details><summary>Le Théâtre du Rond-Point</summary><div><p>Situé près des Champs-Élysées, il a été dirigé par Jean-Michel Ribes de 2002 à 2022, avec une grande place pour les auteurs vivants et l'humour. Depuis 2023, il est dirigé par Laurence de Magalhaes et Stéphane Ricordel.</p></div></details>
+<details><summary>Le théâtre public et le théâtre privé</summary><div><p><b>Théâtre public</b> : financé en grande partie par l'État ou les villes, pour que le théâtre soit accessible à tous.<br><b>Théâtre privé</b> : financé surtout par les billets, avec souvent des comédies plus grand public.</p></div></details>
+<details><summary>Le festival d'Avignon et les Molières</summary><div><p>Le festival d'Avignon, créé en 1947 par Jean Vilar, a lieu chaque été dans toute la ville. Les Molières, depuis 1987, sont les grands prix du théâtre français.</p></div></details>
+<h3>Jeu : à qui appartient ce lieu ?</h3>
+<div id="quiz7"></div>
+<h3>Et près de chez nous : le TnBA à Bordeaux</h3>
+<details><summary>Le lieu</summary><div><p>Le Théâtre national Bordeaux-Aquitaine (TnBA) est installé dans un ancien entrepôt de sucre du XVIIIe siècle, quartier Sainte-Croix, au 3 place Pierre Renaudel. C'est un centre dramatique national. Il compte deux grandes salles : Antoine Vitez (750 places) et Jean Vauthier (430 places).</p></div></details>
+<details><summary>À voir cette saison (2026-2027)</summary><div><p><b>CAPRA (une chèvre)</b>, de Jeanne Candel : du 9 au 12 mars 2027, à 19h30.<br><b>Titre en cours</b>, de Samuel Achache, un micro-opéra pour neuf acteurs : les 15 et 16 juin 2027.</p><p>D'autres spectacles sont annoncés à l'automne et en hiver. Dates et programme exacts sur <a href="https://tnba.org" target="_blank" rel="noopener">tnba.org</a>. À toi de vérifier qu'un spectacle convient à ta classe avant de réserver.</p></div></details>
+<details><summary>Combien ça coûte ?</summary><div><p>Sur ces spectacles : 10 euros pour les moins de 18 ans, 10 euros avec la Carte Jeunes, 15 euros pour l'accompagnateur d'une Carte Jeunes. Tarifs à confirmer au moment de la réservation.</p></div></details>
+<div class="box"><p><b>Mini-projet : ma sortie à Bordeaux.</b></p><p>1. La classe choisit un spectacle.<br>2. On calcule le budget : billets, train ou car, repas.<br>3. On prépare les questions à se poser en regardant.<br>4. Chacun écrit sa critique (voir plus bas).</p></div>
+<h3>Les métiers du théâtre</h3>
+<details><summary>Sur scène</summary><div><p>Comédien, metteur en scène, auteur, dramaturge, directeur de théâtre.</p></div></details>
+<details><summary>Dans l'ombre : des métiers accessibles après un bac pro</summary><div><p><b>Régisseur</b> (lumière, son), <b>habilleur</b>, <b>accessoiriste</b>, <b>costumier</b>, <b>menuisier de décors</b>, <b>électricien de scène</b>, <b>accueil et billetterie</b>, <b>restauration</b> du bar. Un théâtre fait travailler beaucoup de métiers techniques et de service.</p></div></details>
+<h3>Prépare ta sortie</h3>
+<div class="box"><p>Vérifie les points ci-dessous avant d'aller voir un spectacle.</p>
+<details><summary>Où et combien ?</summary><div><p>Consulte le site du théâtre : programme, horaires, durée. Renseigne-toi sur les tarifs jeunes et sur le pass Culture, qui existent dans beaucoup de salles.</p></div></details>
+<details><summary>Comment se comporter ?</summary><div><p>Arrive en avance, éteins ton téléphone, ne parle pas pendant le jeu. Applaudis à la fin. Les acteurs entendent tout, même un murmure.</p></div></details></div>
+<h3>Écriture guidée : une critique de spectacle</h3>
+<div class="box"><p><b>Consigne.</b> Après une sortie ou une vidéo, écris une critique de 8 à 10 lignes.</p><p><b>Plan.</b> 1. Titre, lieu, auteur. 2. Résumé en deux phrases. 3. Ce que j'ai aimé (décor, jeu, rythme). 4. Ce que j'ai moins aimé. 5. Je recommande ou non, et pourquoi.</p>
+<details><summary>Voir un début de critique</summary><div><p class="ex">J'ai vu Art de Yasmina Reza au théâtre. Trois amis se disputent à cause d'un tableau blanc. Ce que j'ai aimé : les acteurs parlent vite et le public rit tout le temps. Ce que j'ai moins aimé : quelques longueurs. Je recommande cette pièce à ceux qui aiment les disputes drôles.</p></div></details></div>
+<p>Pour voir de vraies photos : <a href="https://www.google.com/search?tbm=isch&q=Com%C3%A9die-Fran%C3%A7aise+salle+Richelieu" target="_blank" rel="noopener">la salle Richelieu</a>, <a href="https://www.google.com/search?tbm=isch&q=TnBA+Th%C3%A9%C3%A2tre+national+Bordeaux+Aquitaine" target="_blank" rel="noopener">le TnBA à Bordeaux</a>, <a href="https://www.google.com/search?tbm=isch&q=festival+d%27Avignon+Palais+des+Papes" target="_blank" rel="noopener">le festival d'Avignon</a>.</p>
+<p>Pour explorer : <a href="https://www.youtube.com/results?search_query=Comédie-Française+visite+coulisses" target="_blank" rel="noopener">les coulisses de la Comédie-Française</a> et <a href="https://www.youtube.com/results?search_query=métiers+du+théâtre+régisseur+habilleur" target="_blank" rel="noopener">les métiers du théâtre</a>.</p>
+</section>
+
+<section id="t6">
+<h2>Séances d'écriture guidées</h2>
+<div class="goal"><b>Objectif.</b> Écrire pas à pas sa propre scène de ruse, dans l'esprit de Scapin. Une séance égale un petit pas, avec une aide et un exemple à ouvrir.</div>
+<h3>Séance 1. Un personnage rusé en cinq phrases</h3>
+<div class="box"><p><b>Consigne.</b> Présente un personnage qui se débrouille toujours (au lycée, à l'atelier, au restaurant).</p><p><b>Aide.</b> Phrase 1 : il s'appelle... et il travaille... Phrase 2 : sa qualité. Phrase 3 : son défaut. Phrase 4 : une phrase qu'il répète sans cesse. Phrase 5 : ce qu'il veut.</p>
+<details><summary>Voir un exemple</summary><div><p class="ex">Malik est apprenti cuisinier. Il est rapide et inventif. Il est aussi un peu menteur. Il répète toujours : « Fais-moi confiance. » Il veut avant tout éviter la vaisselle.</p></div></details></div>
+<h3>Séance 2. Un duel de répliques courtes (stichomythie)</h3>
+<div class="box"><p><b>Consigne.</b> Écris 8 répliques très courtes entre un chef et son apprenti. Chaque réplique fait six mots au maximum. Le ton monte.</p><p><b>Aide.</b> Commence par un reproche. L'apprenti se défend. Le chef répète un mot de l'apprenti pour le retourner contre lui.</p>
+<details><summary>Voir un exemple</summary><div><p class="ex">LE CHEF. Tu es en retard.<br>L'APPRENTI. Le bus était en retard.<br>LE CHEF. Le bus ?<br>L'APPRENTI. Oui, le bus.<br>LE CHEF. Il est toujours en retard, ton bus.<br>L'APPRENTI. Alors lui aussi mérite un blâme !</p></div></details></div>
+<h3>Séance 3. La fausse histoire (la ruse de la galère)</h3>
+<div class="box"><p><b>Consigne.</b> Un personnage invente un malheur pour obtenir quelque chose d'un autre (un service, un délai, de l'argent). L'autre répète une phrase refrain.</p><p><b>Plan en cinq temps.</b> 1. Il annonce une mauvaise nouvelle. 2. Il ajoute des détails de plus en plus fous. 3. Il demande ce qu'il veut. 4. L'autre hésite et répète son refrain. 5. Il cède.</p><p><b>Phrases pour démarrer.</b> « Il faut que je vous dise quelque chose de terrible... » / « Écoutez, c'est arrivé ce matin... » / « Et le pire, c'est que... »</p>
+<details><summary>Voir un exemple de début</summary><div><p class="ex">L'ÉLÈVE <i>(essoufflé)</i>. Madame, mon sac a été avalé par le portail automatique !<br>LA PROFESSEURE. Avalé ?<br>L'ÉLÈVE. Avec mon cahier, et même mon cahier de textes. Il ne reste que la poignée.<br>LA PROFESSEURE <i>(les bras au ciel)</i>. Que diable faisait ton sac devant le portail ?</p></div></details></div>
+<h3>Séance 4. Réécrire une scène de Scapin aujourd'hui</h3>
+<div class="box"><p><b>Consigne.</b> Réécris la scène de la galère ou du sac dans un lieu d'aujourd'hui (garage, salon de coiffure, supermarché). Garde la ruse, le refrain et un comique de gestes.</p><p><b>Check-list avant de rendre.</b> J'ai mis le nom du personnage avant chaque réplique. J'ai écrit au moins quatre didascalies. J'ai mis une phrase refrain. J'ai utilisé deux figures de style. Je relis ma scène à voix haute.</p>
+<details><summary>Voir comment s'auto-corriger</summary><div><p>Lis ta scène à voix haute. Là où tu bloques, la réplique est trop longue : coupe-la. Là où tu ris, garde. Vérifie aussi les accords et les majuscules des noms de personnages.</p></div></details></div>
+<h3>Banque de mots</h3>
+<div class="wrap"><table><tr><th>Pour la ruse</th><th>Pour les émotions</th><th>Pour les didascalies</th></tr><tr><td>inventer, tromper, prétendre, jurer</td><td>affolé, vexé, ému, furieux</td><td>il recule, elle soupire, ils se regardent, en secret</td></tr></table></div>
+</section>
+
+<section id="t3">
+<h2>Jouer : jeux et mises en scène</h2>
+<div class="goal"><b>Objectif.</b> Mettre le texte en voix et en corps, seul puis en groupe.</div>
+<h3>Jeu 1. Échauffement de la voix</h3>
+<div class="fig"><svg width="330" height="100" viewBox="0 0 330 100" role="img" aria-label="Cinq visages : joie, peur, colère, timidité, fierté"><g fill="#e8d3a6" stroke="#7a1f2e" stroke-width="3"><circle cx="33" cy="34" r="26"/><circle cx="99" cy="34" r="26"/><circle cx="165" cy="34" r="26"/><circle cx="231" cy="34" r="26"/><circle cx="297" cy="34" r="26"/></g><g fill="#241c1f"><circle cx="25" cy="28" r="3"/><circle cx="41" cy="28" r="3"/><circle cx="91" cy="26" r="5"/><circle cx="107" cy="26" r="5"/><circle cx="157" cy="30" r="3"/><circle cx="173" cy="30" r="3"/><circle cx="223" cy="34" r="3"/><circle cx="239" cy="34" r="3"/><circle cx="289" cy="28" r="3"/><circle cx="305" cy="28" r="3"/></g><g stroke="#241c1f" stroke-width="3" fill="none"><path d="M22 40q11 12 22 0"/><ellipse cx="99" cy="46" rx="6" ry="8"/><path d="M153 46q12-10 24 0M150 20l14 6M180 20l-14 6"/><path d="M222 46h18"/><path d="M286 40q11 10 22 0M284 18h12"/></g><g font-size="12" font-family="sans-serif" text-anchor="middle" fill="currentColor"><text x="33" y="84">joie</text><text x="99" y="84">peur</text><text x="165" y="84">colère</text><text x="231" y="84">timide</text><text x="297" y="84">fier</text></g></svg></div>
+<div class="box"><p>Dis « Bonjour, je vous attendais » de cinq façons : joyeux, effrayé, en colère, timide, très fier. La classe devine l'émotion.</p>
+<details><summary>Que regarder chez l'acteur ?</summary><div><p>La <b>voix</b> (volume, vitesse), le <b>regard</b>, la <b>posture</b>, les <b>silences</b>. Un bon jeu se voit avant même qu'on entende le mot.</p></div></details></div>
+<h3>Jeu 2. Le générateur d'impros</h3>
+<div class="box"><p id="imp">Appuie sur le bouton pour tirer une situation.</p><button class="big" id="go">Tirer une impro</button><p class="ex">Consigne : 1 minute de préparation, 1 minute de jeu. Le public note une figure de style repérée.</p></div>
+<h3>Jeu 3. Statues et tableaux</h3>
+<div class="box"><p>En groupe de 4, figez une scène (une dispute, une surprise, une trahison). On compte jusqu'à 3 et la scène s'anime pendant 20 secondes, puis se fige à nouveau.</p></div>
+<h3>Jeu 4. La mini-scène à jouer (quiproquo à l'atelier)</h3>
+<div class="pl"><b>LE CLIENT</b> <i>(il entre, pressé)</i> : Bonjour, je viens pour la cuisine.<br>
+<b>L'APPRENTI</b> <i>(il sourit)</i> : Parfait, le chef est derrière.<br>
+<b>LE CLIENT</b> : Derrière quoi ?<br>
+<b>L'APPRENTI</b> : Derrière les fourneaux, évidemment !<br>
+<b>LE CLIENT</b> <i>(il recule)</i> : Je venais pour refaire <b>la cuisine</b>, pas pour la <b>manger</b>.<br>
+<b>L'APPRENTI</b> <i>(vexé)</i> : ... Ah. Alors c'est le plombier qu'il vous faut.</div>
+<details><summary>Questions sur la scène</summary><div><p><b>Où est le quiproquo ?</b> Sur le mot « cuisine » : la pièce de la maison ou la nourriture.<br><b>Quel comique ?</b> De mots et de situation.<br><b>Que montrent les didascalies ?</b> Les émotions et les déplacements à jouer.<br><b>À toi :</b> rejoue la scène en changeant le lieu (garage, salon de coiffure, boulangerie).</p></div></details>
+<h3>Grille d'observation pour le public</h3>
+<div class="wrap"><table><tr><th>Critère</th><th>Oui</th><th>Presque</th><th>Pas encore</th></tr><tr><td>Voix claire et audible</td><td></td><td></td><td></td></tr><tr><td>Regard vers le partenaire</td><td></td><td></td><td></td></tr><tr><td>Gestes et déplacements utiles</td><td></td><td></td><td></td></tr><tr><td>Texte su ou bien lu</td><td></td><td></td><td></td></tr></table></div>
+<p>Pour s'inspirer : <a href="https://www.youtube.com/results?search_query=jeux+théâtre+classe+exercices+improvisation+lycée" target="_blank" rel="noopener">exercices de jeu théâtral en classe</a>.</p>
+</section>
+
+<section id="t4">
+<h2>Évaluation</h2>
+<div class="goal"><b>Objectif.</b> Vérifier ce que tu sais, puis écrire et jouer ta propre scène.</div>
+<h3>Quiz final</h3>
+<div id="quiz3"></div>
+<h3>Production écrite et orale</h3>
+<div class="box"><p><b>Consigne.</b> Écris une scène de 10 à 15 répliques avec deux personnages et au moins quatre didascalies. Elle doit contenir un quiproquo et deux figures de style de ton choix. Puis joue-la avec un partenaire.</p>
+<details><summary>Voir les critères de réussite</summary><div><div class="wrap"><table><tr><th>Critère</th><th>Points</th></tr><tr><td>Format de théâtre respecté (noms, didascalies)</td><td>/4</td></tr><tr><td>Quiproquo ou situation comique claire</td><td>/4</td></tr><tr><td>Deux figures de style repérables</td><td>/4</td></tr><tr><td>Langue correcte</td><td>/4</td></tr><tr><td>Jeu : voix, regard, gestes</td><td>/4</td></tr></table></div></div></details></div>
+</section>
+
+</main>
+<script>
+var tabs=["Découvrir","Lexique","Figures","Molière","Reza : Art","Ribes","Paris","Écrire","Jouer","Évaluation"];
+var nav=document.getElementById("tabs");
+tabs.forEach(function(t,i){var b=document.createElement("button");b.textContent=t;b.setAttribute("role","tab");b.onclick=function(){show(i)};nav.appendChild(b)});
+function show(n){document.querySelectorAll("section").forEach(function(s,i){s.classList.toggle("on",i==n)});nav.querySelectorAll("button").forEach(function(b,i){b.setAttribute("aria-selected",i==n)});window.scrollTo(0,0)}
+show(0);
+function quiz(id,data){var root=document.getElementById(id);data.forEach(function(d){var q=document.createElement("div");q.className="q";var p=document.createElement("p");p.textContent=d[0];q.appendChild(p);var fb=document.createElement("p");fb.className="ex";d[1].forEach(function(o,i){var b=document.createElement("button");b.className="opt";b.textContent=o;b.onclick=function(){q.querySelectorAll(".opt").forEach(function(x){x.classList.remove("ok","ko")});var good=i==d[2];b.classList.add(good?"ok":"ko");fb.textContent=good?"Bravo ! "+d[3]:"Pas tout à fait, réessaie."};q.appendChild(b)});q.appendChild(fb);root.appendChild(q)})}
+quiz("quiz1",[
+["Que dit un personnage en aparté ?",["Une phrase que les autres ne sont pas censés entendre","Une très longue réplique","Le titre de la pièce"],0,"Le public, lui, l'entend."],
+["Que sont les didascalies ?",["Les répliques les plus drôles","Les indications de jeu et de décor","Les noms des acteurs"],1,"Elles se jouent, elles ne se disent pas."],
+["Un monologue, c'est...",["deux personnages qui se disputent","un personnage seul qui parle","un changement de décor"],1,"Seul ou presque, face à lui-même ou au public."],
+["Un quiproquo, c'est...",["un malentendu","un cri de joie","une chute"],0,"Chacun croit parler de la même chose."]]);
+quiz("quiz2",[
+["« Il est grand comme une montagne » : quelle figure ?",["litote","hyperbole","antithèse"],1,"On exagère pour faire rire ou impressionner."],
+["« Ce n'est pas mauvais » pour dire « c'est excellent » : quelle figure ?",["euphémisme ou litote","anaphore","gradation"],0,"On dit moins pour suggérer plus."],
+["Un avare qui refuse tout en répétant « sans dot ! » : quel comique ?",["de gestes","de caractère et de répétition","de mots"],1,"Un défaut poussé à l'extrême, qui revient sans cesse."]]);
+quiz("quiz4",[
+["Quel personnage mène les ruses dans la pièce ?",["Scapin","Argante","Octave"],0,"Le valet est le moteur de toute l'intrigue."],
+["Quelle phrase Géronte répète-t-il comme un refrain ?",["Que diable allait-il faire dans cette galère ?","Quelle belle journée !","Je n'ai plus d'argent !"],0,"C'est un comique de répétition."],
+["Quel comique domine dans la scène du sac ?",["de gestes","de mots","aucun"],0,"Les coups et les cachettes font rire."],
+["Pourquoi Scapin joue-t-il le mourant à la fin ?",["pour obtenir le pardon","pour partir en voyage","pour gagner de l'argent"],0,"Il utilise encore le jeu pour obtenir ce qu'il veut."]]);
+quiz("quiz5",[
+["Combien de personnages principaux dans Art ?",["trois","deux","cinq"],0,"Serge, Marc et Yvan."],
+["Qu'est-ce que Serge a acheté ?",["une voiture","un tableau presque blanc","un appartement"],1,"C'est le point de départ de toute la dispute."],
+["Que disent les personnages au public, mais pas aux autres ?",["leurs pensées secrètes","le titre de la pièce","leurs rêves"],0,"C'est la double énonciation."]]);
+quiz("quiz6",[
+["Qu'est-ce qui fait rire dans une saynète absurde ?",["le décalage entre ton sérieux et situation folle","les décors","la longueur du texte"],0,"Les personnages croient à ce qu'ils disent."],
+["Comment jouer l'absurde ?",["en riant soi-même","très sérieusement","très vite et sans regarder"],1,"Le sérieux de l'acteur crée le rire du public."],
+["Une saynète est...",["une très longue pièce","une courte scène comique","un décor"],1,"On peut en jouer plusieurs dans une séance."]]);
+quiz("quiz7",[
+["Quel théâtre est surnommé la Maison de Molière ?",["La Comédie-Française","La Colline","Le Rond-Point"],0,"Elle a été fondée en 1680."],
+["Quel théâtre est consacré aux écritures d'aujourd'hui ?",["La Colline","La Comédie-Française","Le festival d'Avignon"],0,"C'est un théâtre national à Paris."],
+["Quel auteur a dirigé le Théâtre du Rond-Point de 2002 à 2022 ?",["Jean-Michel Ribes","Yasmina Reza","Molière"],0,"Il y a défendu les auteurs vivants."],
+["Quel métier gère la lumière et le son pendant un spectacle ?",["Régisseur","Costumier","Dramaturge"],0,"Un métier technique, ouvert après un bac pro."]]);
+quiz("quiz3",[
+["Où se trouve la cour, du point de vue du public ?",["à droite","à gauche","au fond"],0,"Le jardin est à gauche."],
+["Quel genre fait rire en corrigeant les défauts des hommes ?",["tragédie","comédie","drame"],1,"C'est la comédie, chez Molière par exemple."],
+["« Va, je ne te hais point » est...",["une hyperbole","une litote","une ironie"],1,"Elle veut dire « je t'aime »."],
+["Qu'est-ce que la double énonciation ?",["Deux actes dans la pièce","Un personnage parle à un autre et l'auteur parle au public","Deux acteurs pour un seul rôle"],1,"Le public comprend ce que les personnages ignorent."],
+["Dans Art, qu'est-ce qui déclenche la dispute ?",["un tableau presque blanc","une voiture","un téléphone"],0,"Serge l'a acheté très cher, et Marc ne comprend pas."],
+["Qui a écrit Art ?",["Yasmina Reza","Molière","Jean-Michel Ribes"],0,"La pièce date de 1994."],
+["Théâtre sans animaux de Jean-Michel Ribes est surtout un recueil de...",["saynètes courtes et absurdes","tragédies en cinq actes","romans"],0,"On peut en jouer plusieurs en une séance."],
+["Qu'est-ce qui fait rire dans une saynète absurde ?",["un ton sérieux dans une situation folle","des chansons","un décor très cher"],0,"Les personnages croient à ce qu'ils disent."],
+["Quelle scène des Fourberies de Scapin est un bon exemple de comique de gestes ?",["la scène du sac","la scène du portrait","la scène du dîner"],0,"Géronte y reçoit des coups de bâton."],
+["Quelle est la différence entre théâtre public et théâtre privé ?",["le public est financé en grande partie par l'État ou les villes","le privé est toujours gratuit","il n'y en a pas"],0,"Le théâtre privé vit surtout de ses billets."]]);
+var L=["à l'atelier","dans un restaurant","à la caisse d'un magasin","dans un garage","chez le médecin","dans le train"],P=["un client pressé et un apprenti timide","un chef colérique et un stagiaire maladroit","deux collègues qui se mentent","un vendeur trop poli et un client très méfiant"],S=["ils se comprennent de travers (quiproquo)","l'un cache une erreur","l'un exagère tout (hyperbole)","l'un dit le contraire de ce qu'il pense (ironie)"];
+function r(a){return a[Math.floor(Math.random()*a.length)]}
+document.getElementById("go").onclick=function(){document.getElementById("imp").innerHTML="Lieu : <b>"+r(L)+"</b><br>Personnages : <b>"+r(P)+"</b><br>Situation : <b>"+r(S)+"</b>"};
+var AL=["dans une boulangerie","à la gare","au CDI","dans un ascenseur"],AO=["un parapluie qui pleut à l'intérieur","un mardi à vendre","une porte sans mur","un silence à emporter"];
+document.getElementById("goabs").onclick=function(){document.getElementById("abs").innerHTML="Lieu : <b>"+r(AL)+"</b><br>Objet impossible : <b>"+r(AO)+"</b>"};
+var PDF="JVBERi0xLjQKJeLjz9MKMSAwIG9iago8PAovUHJvZHVjZXIgKHB5cGRmKQo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvUGFnZXMKL0NvdW50IDYKL0tpZHMgWyA0IDAgUiAxMyAwIFIgMTUgMCBSIDE3IDAgUiAxOSAwIFIgMjEgMCBSIF0KPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDIgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9Db250ZW50cyA1IDAgUgovTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXQovUmVzb3VyY2VzIDw8Ci9Gb250IDYgMCBSCi9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+Ci9Sb3RhdGUgMAovVHJhbnMgPDwKPj4KL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgo+PgplbmRvYmoKNSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0KL0xlbmd0aCAxNzQ5Cj4+CnN0cmVhbQpHYXRtOzhVJm9JJkFKJEM5TVNAUjwvKEJET05dRm5ndVlBXDhaVlJHJFZXbCJyNCdnUWVFI00yIyRhUSJVK0loZitwXSJzUzhbUFoiVW5aNkFiSXEqISdWc21oJGpKK0BDWkklMz9CXzlfbClWSF9jOCZqKlQpYFpMTmFydGUsR1ZKZztMUTlJSEolRTguTDUzLzddMFQpOCxzTVUjK1EzVEE5ajhmOzQ1ck9JQicjK0wuUjU3QUVLXERHN15qNWhmMzdFLU0tZi9GUiRDUUpPTkY2Zjg3NHFpYHNkOy82VldvWT1QWF1taUBoN24sVU0mNGtyOjtEUTFMQGBKakM6Rz9gKUI+MD1EJHNhSjg3dD1rNmtSSHV1MzNcM1ReXWRtISxZU2wiTmJkXF44KmkpR3AnMlkiTyM3UVA3TFokOi9ZIzowbEcvKUpoL2dEQ2dYOVZDaXQhVm9ELThEdDxONyRNSk1QY1dROUhBOSIoK0MxYGBmclNoIS9FUWowZ3VXUy9HLWlHa2YyaCdccmVsPzJsSDJHWCY1QWoxYVJNNS5mbjowLXFKX0orQSFUR24rPTpeWj48UldOJUhIYDhPI2lMSXBDOGpSQWRBSUppPGRuYy9VMm5ONGBRKVpUWnFiKXUyTjxLNzwqI29SdT1GPyJKbVJcZk1fJ3RFOkhHSSRUJ3BQaj45NCwxIz1vYUhcNGFXVF5pQ15qJXNANTxYbSsxLm1nbk0nNEc/ZyIuUkwybjdzQj8uP18icUlfY1IwKztTXS06OiI5cl1uJStfZGVjcmQ2T3EuN2EzcVw5a3AmSGI4NS9dJjxOaEE2VSJda2ltPmUqWj5MQjlyWDRQQzhZUVRFbGErViZlMWhXPClfPyRSPyhWK0NGI1ZsTkxrdTNzKlReKFhYXCtsKFQrdTk8TyMvVVkjKztvODtmP1dIIltWYFNxajFuV2xALyRBRGNeNF8oOT1uUG9NVUopOWBqYWFVallfKGtqZjkwWTpbVkAhOTsnWyxeWUNIMUdBbmc2OyFQYTFZaDNkbExrMWpzN05AYCsoIihMND02cmxFVm8xU0I+ITJSaFZtIktJUzxMak9TcG0rZzhKYV4rN0RkZlZmI01aO1JQSEwsZE5aNEFUSE9pY0UyLkQkNkY0YSxiZks4R1pbUCc4UXMwSUVSJmRpWlw8WjFfOiQ7bnUnUE0iQlhUNWZeWShCRz5vLUshSms7JWtlLEpsNkllIS5lZVIwNForWVQoM3M5Iiw0UWgjbSomR0hFIkNxI0BgMlleYT87V1E6bFhpRm02RDM+NEtWRy9TPzAmR1VhLyxkKlRnW2wtJ1VTTCVcaGNnLWI6ZUxzcnQtVCkxSkgobmcsYy9VN287SiNjKnJpLFgrZlpBQVN0KjgoPT91Z11APWNHSiVjSVgrYi46Z3JjKj1hRGltdCVaWChPLjIrMVUuMVpAKzxFbUprdWg/aTZhUj02O20obSgpcjo8cEFwbm50NENNVTJbRiQ+USQ/KGtrQ1cmaGhAXDxQUEhRJzZIK3ViWURnR2ppLFZuJlVVZC9jUSpzYC8kai03OFZqXlFeU2BGbkdxV1BpOnVvQmFoNThfTmQ+KiE5S3RaI0w6XjsoT2wqWGoiRTVeYigxbzxJMWw+dDhuaGZDITY3aXBBNUVgbidSOjRSYSslbkxEPTQ/Ozo4XXE5N3FZQCJ0K1ZjVmZaRz0mZFMrKkhUWnItVGE3SSsyKUpRUTpOMltHbFIoL2NuUT5fUz5GaFQ+a2M6LU9wbmRJWFg0ZWJNbUZoOl1SV2ZaQmVuPkFYVSFDS0tXPjtmIiNzP1s9JGhjL0ArWnU7PDE1WFczSV4nZUcqQylHQCsmSilgLUZXRGpSW1s5Tz4yc19DW1tWQVplYXJsSiI2RmtqOm4zSDY6OVQ3KTtmOjFIRFo1TEptTEhnTlRINFZcUVo+XD1jTSZZP0syX1VsTyJKSEFudSI8I0ItOTttdSdWSl1uT2xiI3B1YjEncGFTUkFVJS1lQnA6ckYwM1NxIU4nLyVZViRITV08Xzc4LXJaVVdeZFtROVlGPWplLXUzc1w4YStdXTQ6P2RFRkdEJk5mb3FiXSkwIT9qRWlbZEQqNDcpal0uWz0uKCVrKihoTjlqa2ZxdSgiWzAqcXVtVSFyYEhRYTQqLXJUQkpuZyN1OkNfa2YuRk4xRWRGNyZiOkpeYCo5L101U3JNcCg8LG1TNjQ9clwsXDRaJiM5MExrY1dVOjQjaHBkNWZwcWFjZzRjMnIrO2RXJjozXHBcMGxiTUYrUHVMQSdXYTpPNzs1cTE+W0khRnAmb0BLfj4KZW5kc3RyZWFtCmVuZG9iago2IDAgb2JqCjw8Ci9GMSA3IDAgUgovRjIgOCAwIFIKL0YzIDkgMCBSCi9GNCAxMCAwIFIKL0Y1IDExIDAgUgovRjYgMTIgMCBSCj4+CmVuZG9iago3IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9OYW1lIC9GMQovU3VidHlwZSAvVHlwZTEKL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjggMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZAovRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwovTmFtZSAvRjIKL1N1YnR5cGUgL1R5cGUxCi9UeXBlIC9Gb250Cj4+CmVuZG9iago5IDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtUm9tYW4KL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL05hbWUgL0YzCi9TdWJ0eXBlIC9UeXBlMQovVHlwZSAvRm9udAo+PgplbmRvYmoKMTAgMCBvYmoKPDwKL0Jhc2VGb250IC9UaW1lcy1Cb2xkCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9OYW1lIC9GNAovU3VidHlwZSAvVHlwZTEKL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjExIDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtSXRhbGljCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9OYW1lIC9GNQovU3VidHlwZSAvVHlwZTEKL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjEyIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLU9ibGlxdWUKL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL05hbWUgL0Y2Ci9TdWJ0eXBlIC9UeXBlMQovVHlwZSAvRm9udAo+PgplbmRvYmoKMTMgMCBvYmoKPDwKL0NvbnRlbnRzIDE0IDAgUgovTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXQovUmVzb3VyY2VzIDw8Ci9Gb250IDYgMCBSCi9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+Ci9Sb3RhdGUgMAovVHJhbnMgPDwKPj4KL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgo+PgplbmRvYmoKMTQgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdCi9MZW5ndGggMTc0NQo+PgpzdHJlYW0KR2IhI1w9YGA9VSY6WEFXZktOSFthOiomIixYJ1dAYChlWzo4KDBNdXFHZCtnVkI/ZyEqXT1QSm1dWidcVWFWRCNJKW8kW09zZ3NwbVVENXEoRjdxdVFlOzxkIUI/UmRdMiZQOEwldSZdRzwhZlpuOFdvIUdMVlFTTmI9LFBMR2hMWlZ1R2RaQWVKZitIR2plUCcsMjonODNkSSknOj91WFBoLTwqT1RqZFBiUz9YN1hFLTdRVj5cME4uWzwqYjhPcUE+YmQ4NWVncE1HMW8sRigzMjtFS3RJInI8W2xaJ0ZyPHNpVlJfJiY+YVpVLkpZS0pYdDQkZjs4RCtMbCYoRy44VzU3X2cxM0dUdChRaTNKRlMyV09vdSo4Wis8NWFeKVFEX3MuViVhNjE0T1YnSE5ZVC5KYS1kJnFRTi0wZzxFP25UQE02Vl9IUXMmMVJbMF4rOGMqKE5cQCJecVkvZysyVkFyLipDXHNAUSpLIm5ZQS4kQz9GKEpPPkhhQ1UqYS87OkgnOUpiI0EjWmFMLlpcSjZjUSkuLDhaZTxxRWpCQUdCYWdONCQ8SzhEaXEsNC04cVE0XU08KGFkcWFfYy88bE5nSGVKa0chIig9KEI0bmJmVmQoIjJeJlVPKUI5SiYyLCZmSnBxO2szMS4rWV0iZm9kN2BsMyRxN0pBZzo2SG5tZ11UcE1HUzlMKCNYYnBqNi4wWFxjYFYibjMyPWZIMERDbi41NWlhKEZXVi5vYDJdKW0mZipNaiM/OztSWS1NZFJENidbJVciTGhHYTs8PCpzaFRgTD5OTGVLZ01LUyN1S01DQ149MjpUSD1IP1QkWmAkRDVAMldZc1ojZD5tRThTYVdOUlgrJU1BcUwtbWZtNHEpakplN2VXXnMrSSQ3YEosTlgwSm1ib0tGYnU0RUYkbTorVTZLZDRzITxGI19SSEUrIjZNOW1OdFNjNytQK08yXVEmXitMTUVXJltILm4oYSktZSdnL2BlImFvJHU2OWl0RD1FZFJGXVxPPVdMaEFUTFtmaSclRm9qbVtvPkc4cE5ZKmJmTmcoWCZSKGU7MGpoXzxhQF9gIydma1ZFXGJjLi0tbGslMjcwWk46I2g0UlAibzc+akBJRyw6c2UxJV0iJSYmW2RgIU0jTDBKLnAkV0tqTDRuK08/S21DXmAnMGYiRW5bQlY7P0RdOCFzLChGR0IxWWFuQkA0Ik9JMyZCPkpSYy5bI0QiQWtcczBXSm80N0diT2MxUTR1QCNIYTxUSUlDT29QTDJVPFM+aThSa3JuOS5tdSpQTUE4JGdqLDYwIU1hWEtaMyJgclM8XCdCRCgxQzVxX0pEYUppLm5gRkMrOj9EVHFiaWxiV2BuaVpkMF9DU010KmNDTSQ2dUZjRWxwPUEzZ3EsdE1hLWMuY0o8S2U6ZzJtJlc6JlpSaWVoJFFLPWNYalI4Z1ltSVtnVzckQXA8VUdpOiktYDRNWmZDY3IoTEwlJmNkKjkkNWFvOCgoI1ZGQC8jZ15rZDZFcjcucEcuZzxNIXU5VWpOXlFdcF5wNyYpNEwqY3FNPlEwQUpqYzcnJF90VSVrVU1lYyF1dWxZRjE1OFY2NV0rJ3A7TFcsP1ZqPE8hSW1ick9LR1YsQjZBYVZBT3Q3Oz9HQyUoRjRwZFFtLUFYW1MkMiZ0KigqSSg4PjMjJStHLl4mRWBkI09la2RNUjBzR2toJyJsak1qL1AvaUNaLT8kMillPV9BSWE+dXAmQyQ+PDJET1o1TipNZmdxLG1ibiUyIzk+Z0g4OCNFcUxZaWxrLWRdcmtVLjQwV0EoJWZCU0hWO0xRbVdNbjdva2ksOzpeSkgtUmlIXkRMV3VAR1lKcWohVzBTKmFvXkUsMWQ0M1lxaTVPPjp1Q0IlcVMjb1kvdGRVJWBSbHIkXDFIJWknVVBsVDNwO0hiWkBeJUBhaVwnIj0vXV9icEhrNDMvOVI5PE9cRm1tLmRPWCcycFlCSzA4bUoybT9EYmNJXSxQJ2QnWC5mKl9GUVAvT2RAbio/QzNdWUFqLEliWWVpMlxpIz9cLlVPLjkxTy1GWjkzRlk8ZiZnK0VjQTVHJkc0T29TJHBvQV8/bF0pbyRwcTMzSG8scG4kaGJIS3BQbTRcOiFRYU0hYkBrZHFfQERhXnMnJFUqcFtIWUs6TllCT1kzSU5hIS9cMFI4MzJeO1IsPFExVVBkYGVpYVBkQTJMXHRqbXA0ZnA9LWFfTHBGTiNYPTlBcF8rWmUpP1ozJFFIIyM5KVVJUilVJjchclk/IjtfR0lXOTBwQCl1ZjElVCsxKnJXKytlQ0pifj4KZW5kc3RyZWFtCmVuZG9iagoxNSAwIG9iago8PAovQ29udGVudHMgMTYgMCBSCi9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdCi9SZXNvdXJjZXMgPDwKL0ZvbnQgNiAwIFIKL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4KL1JvdGF0ZSAwCi9UcmFucyA8PAo+PgovVHlwZSAvUGFnZQovUGFyZW50IDIgMCBSCj4+CmVuZG9iagoxNiAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0KL0xlbmd0aCAxMzIwCj4+CnN0cmVhbQpHYiE7ZDlsbyZJJkFAQzJsbihpLUFkQUlyN2teSUI7ZU8qWzpMZE9vY0tHPW4uaUJDY1BSNWM0cVdrYG5XTC5fdUFQJVp1UTpSM2lOLylpWWhDY2RfVmRKU0hrb0FXQjBtcFFBXl1HP0tKSSwsZnBdZ145JiJYJF44Ri9vLGpFajBPNyElJ2AyNyZLS3BFKF5Rci4nUCdFOT1FbTBjODVGR184Z1c6Ok9nSi9xVVokcF5NN0xpTko/UmomPVc9amhbM1cqdGRrSFMuPk4rSVlANSlOLjgrNVhmTihaUzRVOHNfQT4nc2k0VFpWJmJiPDZfUz9QQytDUGg4T1ZgY3JVSFIpMS1fYV5eInMrLz4ka2tcQjUjNmJoKXRIO0knZz5uLF5wbzpnQTBXZG0qbyU8UUJGOUVIW1hfOl09YXJSOWwkTj1DIUkkY3RwQT5bLERcNFpvM1o4J0gtNGhDQFhbUUInIyMlcl1ZLmQ4Q0VOR1lSPzg7WDcrTy0wK2tqPHFgcEcpTV5HUVQuSSQjPEpaXzc7aTY9KFA7bkAmPCw2JSxqQk0kWExQWUdbJzs/PWJXJyNIVSs1RV4oVSlgKWpJJ0whIk9TOyMlXClUTDkwNCxiTk5oXyNeOzc0MiJfTC8tL0NoMl81PXJuM0BtY0E0YkVUYmAyQS8oKCdaQk1pZm1sLDFROy9pcWs3YUBEb3E4WWUoWz10SlcmSElmYz5cMiVHMnUxbDI8SS42PjBgJGNORG5MXk9zQnVPJ3JNQkFtUUgpWitcPD1oQDk4WXFuQltqW2pmbTooazpHXHE/XidsbyY3OG0iUkYxRjRAYVlHVkNvISwzYDdHbVE6NmNMTllDc2orJFNIT1htQWQnJ1FIR1dER2xyb1VjTSskXHQjYjRjKVxQUUBVX10+VCtQR3M8TSF0UmFAJSdtKmttPzNgRkdfUXAuOzZSIUVmSmlbJilsM0RJIWkoUzYhY15EKVglJWlXbVdpKlBtNSROMltlNWY3XUNaI1lnK0wwdCxLWWNYXV1lU1ZxVk5oZ2VRUVxedHQ2Qy1DKk9yOzhGYDlWLVtcOT8rQ2ZdaCRlLDdJMF1KVlldcUcxKSteMyxRKEApO2tfLSViKz5PdUlAcFhhNissSFpeY2JgSmRPN3JBJ1wtNXE3L0BdTDtwUzE7aURyc1hYXyhVUVteO0NpbjNGZiMoIy4mdSVPMFEhOlZpKD1rR0ZbTztfZ01mLVMySldBUGw6VUJvIj9AQT4iIlRYL1suUkwyKCxENFFKUVpMQ1lHc15IP2VLNl85Z1ZIaCpXJDhLTGk/TF41XSVkdWcpVVNpKStHXzoyTDByLzEpN14yK1hQKlYoOHMpJ25hJztBIV5ZMignUSxMT0Y0LEMuWyxOZkYvQ3Q/IVRgQTJUMDBuZm9CLFQiLSJtTldtR2g7SG1LPDs3VEVeS2c4RF8rN2YhLzE1IjZPNWtRbiNnMjwobUxpN2AhJWw8RFpFMmlwNGhnLyxiYms8PFxebGIzXGxQPiFNZ0hedEQjRHFAIVI7OVZVWnBbOEYhOUE8Sl88I2JFPmxAR09MTTRJPDc7cUouSS8iQ2ZaUVgqK01dLlUrIitPY2A2V1FNV05XWiJRJmVcNVRRMDUjSVYqbT8/YVciJlllYlY/WHFkbktPLGtcLihjTzBKTCphKmdON2VbKS08USlWTlwpaj5lLUQ4PF9BOjhfNF82XE41PVJ1LV9bK3BtJ0A2cVtYa3JXYzolQTwkfj4KZW5kc3RyZWFtCmVuZG9iagoxNyAwIG9iago8PAovQ29udGVudHMgMTggMCBSCi9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdCi9SZXNvdXJjZXMgPDwKL0ZvbnQgNiAwIFIKL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4KL1JvdGF0ZSAwCi9UcmFucyA8PAo+PgovVHlwZSAvUGFnZQovUGFyZW50IDIgMCBSCj4+CmVuZG9iagoxOCAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0KL0xlbmd0aCAxMTQ1Cj4+CnN0cmVhbQpHYiE7Yjk5W2dhJkFJPS9vSVlWdEtcai10REE8OF0yJFs3I05KZjthLUNYS01aKXJTTF5GZSw2bGt0SVRTQ2ZzamFCcVU9cjQ5ZHJpZ1lZZlhwIk5IJFpHSk4wRmxoPjBNKk8rbik9NGdGXj5NSjhsVTxoaTwrYGdyTU9yMTY+U1ZZMGdgRnQqIUBLO0FJUSFuRCFoYVNhKT07TERhTyN0MSU1WVtnUixgYCswTFs0MUNcbXNdL3ByI0BLZyolUEJkPmQ4KGJRTGcxRDY5LCspN2ElQTMxciIqMV4rMVlQJVxkJSc8WUIrLEVET0FwIk00c05hM1AiTlFAMFs+cC5uPUVPP25SaT4vT0MjaVozdD1yOyhhTTlIKWJvN0tbbChANFZNNSEmczUjV0FGNk1KNVpbOUdGbUVEO3NnRWBbVGQvWkQ/NVs1akpJPWQlUyhcUFFMSScpPTtSXlRASyssUyJGKlgjRVhjO25SOypMal5UYVZxI2xYXlJuP2IuXz9LOmAuWDxuKTReJTw3Kk5nJGJwMVBKbS10JSVhWnUwbDRRYyxJWzhqJ2NNRm1ZNkpNdDFFLT9NODQtKlxaMGwuQEQ0bGljWCs7LDhmUkRIU2EzdVc0NWg6YFhrcGNVITM6N1xxMztuKjozZWs4K0M0PjdaalYyKWoiLk8nSC5fW3FEUkVhb183JTlXdGZiPCI0OSxWX1x1MGdyO2FfRj0rKCQvZitkI0paPE1VN3FWYnFkRzMjcW5CKCw0SlBgKTlHcEZOL0c2JUZeJyNTOztaS2xEVF0/ZyZlSGNGRCJgUT0jLz1jalApTSs9RT9NM0pgVHJLcjhPNSJCZCIpW2JXJ1gwTWBXPiwnbU9PKFBtMjtLajs7LUZYPEAjJ11HQWI0PSZEUV9Wa14tPVs+bUVsbkNbY0Y+Yks3THEsQHQtYUhHOmYnVCVwUVVYOjNlV1lKOlIqclNtWlxwJ3UrIyo7UFkhJzhaJGBlLHQ5WjQxNDJWKlNTRmFATyRgIT1dSSloTzdvJ1I2PzgmUWwmaUdAN0QmTVojJjBYWzBQKWkpXikobWVnVXMrO1pvXnMnWEdkXGQ9cjR0VHRxQFosLE1sP0REI1lDUlRgRXRzUUY7PlVgNjNHSnRuMVQkOHBUMnNLbFs8KjtQaVZDOlMvYFgiTTtVY0lFWSwhZSpWOVtiWlxGUUgpaE9NOSpIYzNbSStETnNmTllrXUkyS1UzUWMzVyxbJE89TC9vbDM5UU8lLC4lUUwiXyomJ247RnVCOSw9YCw8Kj8jQ2IhUl5cYl43OitxNF9lR04/PFVEQmtZUGghQ0Y4KG8nWyYnZVlQOjZrKiUrdCFiI2psWTpbKGJSayRLaUAnSW07R2MtL09XcC5KJTs4bnJjOENgYzZAdUBoXGpbW0MubSoxSk1MdEJOJ21OMXFCXm8taXVBMkc5NUpxZFksLGQtIihHczEoZyg0TigiITJzKFdnY0gqSy5oUkE9cGc5J01VJUoqJWwvZVVQUFtlPDl+PgplbmRzdHJlYW0KZW5kb2JqCjE5IDAgb2JqCjw8Ci9Db250ZW50cyAyMCAwIFIKL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0KL1Jlc291cmNlcyA8PAovRm9udCA2IDAgUgovUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PgovUm90YXRlIDAKL1RyYW5zIDw8Cj4+Ci9UeXBlIC9QYWdlCi9QYXJlbnQgMiAwIFIKPj4KZW5kb2JqCjIwIDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXQovTGVuZ3RoIDg2Nwo+PgpzdHJlYW0KR2FzYW45bGxkWCdZTzxFXU5ebiQ4ZUMhZ2EqKm9zQUM/bChpRSNdR0ptc3NyWVUrN1BKKTtXaCMsVG5IQGlQO2pwImxpUEdZUHVvIzhzWzUiN1MlI2xQZm1OSkdeIU1rXzUsVV88NjNSP1ZPKVY3MERVdF8kJl9jbllycy8mWGF0OGA6RidMIz0rLDk7RjJMRUAiJChoWCM7ZFkpXUFwT2lwWnRgVSVmQGVfdEMiclxhblpKJ0dVa1pYTiQwSmkwVE5pNjJvMDY9VV4tVzhKRzs5aHE0NV5adFQ1cGc1ZDdvaTVKaVwmUCpQbDlCMkR0U2U6WiRmVHR0LjI9bXRoIVxmZ3QpLnBZTCM6Iy9LSmpcYjw8c0g1aSZnYDwnK14qJkFpcShZVkk/VSouL2lWZmZwbGphM0d0LyY0VU9OaylQZ0U1WyxhQClLPjtqIUdrLWRGOzRfUmtdYWVYWXRVPWdPJF0zbWNfWGljUiUoS1k0Nk85W0MiTltzbGUlP0pTYzo6M0QxMm1xTF5WLT5DckBMXGZMLkowZTNwdV4iYChnPlVOMXNKIjpyUis2UDRmOUIhNFNdU2RKXSFPZ3BWWWpLcFkqS1woXXAtRFBRJjZNJi40NCxudTMhQEMjanMsYCFNLG0pMiglXiZFOHE6M0U3PiImV3AhWmtdWGhCP24mbDJmZSdxMDxhSDNwb0Rabz9uJjdMQU05PnU+NkEoJWFdSlJtXVRyZDNdS0xmb0Y9PDhXO29gP28xI3RmVVJfWFtoPFJPZlU1OkpiYEgwXWBUSi8vYjxJNiwicWdUNE1RIU1KTyZqPTttPyo2PV9PJEFjXkVAVltJZz9JM3VHNTgqXVFHNDosTkxuKXBmJHFjKitGcFxTLlglYlE/U2NLJ2M/WjtnamRAUGwnajRnQTEkR1VnZFhOMnBOQypRPmtrI1EwODAkUlZOJCZdUixGTkpYWXE/UkEzMWBWKUhwMTMnZSgiYiVMK0FPclRGTz06VFgpYS0kW15vNiNeYmwjKTtVMUNpQ1IhU1U2VD80MD9WM2oxPElUMCJeMSEtWSpscjpVY2dUdDFWNWdLaWQpVi4sX244RVotSlZgYVltXE4rSjsiNUkjWXVmbjFCWjJjLCRvQE51OjtaOUxwIUNvX34+CmVuZHN0cmVhbQplbmRvYmoKMjEgMCBvYmoKPDwKL0NvbnRlbnRzIDIyIDAgUgovTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXQovUmVzb3VyY2VzIDw8Ci9Gb250IDYgMCBSCi9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+Ci9Sb3RhdGUgMAovVHJhbnMgPDwKPj4KL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgo+PgplbmRvYmoKMjIgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdCi9MZW5ndGggMTMzNQo+PgpzdHJlYW0KR2F1MEQ+Qj84bidSb2VbMyxfTVFXSWg5PCs4OnJCRkwnQWtsZSpaI0AnJGxcQCxoTzZCKWhmTiQoRlMoSSVmJEFKVlhoWV4ycjdcO0NEXENVJkxGXiEuTEVTYnEwK0FALzoiKiYtOjcscGlBS0FSO0EiQTguUGxXRCc/UWlybj0zXE0vSHNqUFFacHEjK1E7RTskdGJlPmhzMERKJz5FdTFHMmREMjEwdSE9RkNWZElzZk5sRCRmIWRvUzNXcD5EQHBrPEldXGQxSkMibkNIVyVLaURkc2tLbmozPDYkNDVuNy4uWjcnSSwpPjBuaUdYLFo5TW9jTmswcjdZNFBdUFluRGg0QF1GNWZmT3JqJkMvLzsvSGEuRCRwa2JdWCx0LStIKGpXK1tcLThocV9jTEJPV0tAczFkbVsiaThPRSJIIjMpaTNVb1QtWE48NCxNXCE/V1NXa0kuX147UTxpNzFPWmNWLUI1P0UxLFFgTS41YUBgYCkxOzI+O21qJGFUXDg/cE1SPi5gc3IhWUo5Qjc8JkkmKSV0S2hvVmtANz0mLltWWkRNTFhWWkVET2JLa0o9bWYhKD5SYVRgOmVWITlEYzpBZF0xPC5RPFhZUE1CRjAlI3I8Yig5P1llIyhZTC5SO1JPW29bY2d1TSQtSENhMWdKdGFBTUI0QlNlcG4tP1M2KDArcDE6Z0BZV2VIalJrPSIwbmQpIkIlK2cncFNPOS1qYC1pST0oJz4iNmxyPGNwME0oU0RTXFQiIkgkQVdscCw3WCppOC0nNVJrQyc3ZDtBVXQyJGVJMG09ZCYnOD9DKGdwVjkqaCFSX0ldSW9fNEsmcl1bLklGIyFRa0lPZDhpKCQkK1JORiJ0UVNMLiVqK2k9K0k2YiFNUGBTXWhiT2tmb05xdCdRbyN1VTIxZSNsX2dfZkVYJ3JxOTE4ImJQVW1UUT1XK1FAWG5QU3Inclw2SWw8WlppYF9HImBVZ05SLTRUMldXQys9KkJEMDYpNzFBQ1YqOTg6aFlsN3JAb1w8Ml9uM19wSWlNPzQnZ3M5SEJuZFV0cD00MmpkI11QTVVvbzNOQ0hZSXVTYnB1aTkoMGQ7bXE8cURLI0pPXjw7PGREN0hMXk0uMzhnP0VFK2E9XmRFIkQwY11IT1BgS01QXCUsY2pWOTtlZTsyM2Y0ZEFjX25fWCkkLlk2cWEoPjlsWStBNEBCQU8oV1x0TDxraT1qcnBWZmlZYGdnWmEnPSFRK0pxU1F1WkUhQnRjQCRjPEk4MF9qYEJoTypWSiFCWHJXVmw0Jz8vWkdRT0xVX1chQFI3bCxOLS1AUytBIihmVDE8L2ZcOlhmWzddMi4hTihdTjJuWEtzXHEwWk0xMmVwUEQmai9dPiVeW2Q3dFVoYnEjPkJGLGZkWW1tNyNLR0NYPzlqaTlPX0osS2Zia01bSmdoJztiXjRuQ0xPSEU7Y1A+ZDhLTk5GRl9PWHNDT3JdQVFUQWxzbilZQV45JTMoR3VCbUo/R1xhNjwxQ3Q1ME4ocEhLLDxFKUtGYk9mXFZqJCJtP0skZCUpJilSclZycU0vLE1gLjNeTlAwOkRiaXJLZS1eMVJTNU9VTTtGbUpyLFc8VXM5VDBGUypYOTVNdDBcPVFcZ20kcnVKN1JkOW1ma14iUUNNISROZExRPT5TJCVAYHJrKlBgNk8pOHJzbXNSSi48YF0lakE0XEZEPW9EckgxT1pbbV9mb1BwK28haTRVdT06N18mLUwuOTRAXU06T15yV2Iuc2lDRX4+CmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDIzCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwMDU0IDAwMDAwIG4gCjAwMDAwMDAxNDggMDAwMDAgbiAKMDAwMDAwMDE5NyAwMDAwMCBuIAowMDAwMDAwMzk2IDAwMDAwIG4gCjAwMDAwMDIyMzcgMDAwMDAgbiAKMDAwMDAwMjMyMSAwMDAwMCBuIAowMDAwMDAyNDI4IDAwMDAwIG4gCjAwMDAwMDI1NDAgMDAwMDAgbiAKMDAwMDAwMjY0OSAwMDAwMCBuIAowMDAwMDAyNzU4IDAwMDAwIG4gCjAwMDAwMDI4NjkgMDAwMDAgbiAKMDAwMDAwMjk4NSAwMDAwMCBuIAowMDAwMDAzMTg2IDAwMDAwIG4gCjAwMDAwMDUwMjQgMDAwMDAgbiAKMDAwMDAwNTIyNSAwMDAwMCBuIAowMDAwMDA2NjM4IDAwMDAwIG4gCjAwMDAwMDY4MzkgMDAwMDAgbiAKMDAwMDAwODA3NyAwMDAwMCBuIAowMDAwMDA4Mjc4IDAwMDAwIG4gCjAwMDAwMDkyMzcgMDAwMDAgbiAKMDAwMDAwOTQzOCAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9TaXplIDIzCi9Sb290IDMgMCBSCi9JbmZvIDEgMCBSCj4+CnN0YXJ0eHJlZgoxMDg2NgolJUVPRgo=";
+(async function(){try{if(!window.claude)return;var d=await claude.use("downloads");if(!d)return;return;var b=document.getElementById("dl");b.onclick=async function(){try{var s=atob(PDF),u=new Uint8Array(s.length);for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);await d.save({filename:"fiche-eleve-theatre-bac-pro.pdf",data:u})}catch(e){}}}catch(e){}})();
+</script>
+</body>
+</html>
