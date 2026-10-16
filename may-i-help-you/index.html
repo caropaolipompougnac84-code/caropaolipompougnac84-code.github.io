@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>May I help you? A2 B1 B2, anglais bac pro commerce</title>
+<style>
+:root{--bg:#faf7f2;--ink:#1c2438;--mut:#5b6478;--card:#fff;--line:#e3ddd0;--red:#c0392b;--navy:#1f3a5f;--gold:#e8b04a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#14181f;--ink:#eef0f4;--mut:#aab2c2;--card:#1d232d;--line:#333c4b;--red:#e5604f;--navy:#8fb4e6}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#14181f;--ink:#eef0f4;--mut:#aab2c2;--card:#1d232d;--line:#333c4b;--red:#e5604f;--navy:#8fb4e6}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5rem}
+.awning{height:34px;background:repeating-linear-gradient(90deg,var(--red) 0 28px,#f6efe2 28px 56px);border-radius:0 0 18px 18px}
+header{max-width:760px;margin:0 auto;padding:1rem 1rem 0;display:flex;gap:1rem;align-items:center}
+header svg{flex:0 0 80px;width:80px;height:auto}
+h1{font-size:1.8rem;color:var(--navy)}
+header p{margin:.2rem 0 0;color:var(--mut)}
+.lv{max-width:760px;margin:.8rem auto 0;padding:0 1rem;display:flex;gap:.5rem;align-items:center}
+.lv button{flex:1;border:2px solid var(--navy);background:var(--card);color:var(--navy);padding:.6rem;border-radius:10px;font:inherit;font-weight:700;cursor:pointer}
+.lv button[aria-pressed="true"]{background:var(--navy);color:var(--bg)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-top:.8rem}
+nav div{max-width:760px;margin:0 auto;display:flex;gap:.4rem;overflow-x:auto;padding:.5rem 1rem}
+nav button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:.55rem .9rem;border-radius:999px;font:inherit;font-size:.95rem;cursor:pointer}
+nav button[aria-selected="true"]{background:var(--navy);color:var(--bg);border-color:var(--navy);font-weight:700}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+main{max-width:760px;margin:0 auto;padding:1rem 1rem 6rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem;margin:0 0 1rem}
+.card h3{color:var(--navy);display:flex;align-items:center;gap:.6rem}
+.ic{flex:0 0 2.4rem;height:2.4rem;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:1.3rem}
+.card p{margin:.4rem 0}
+.tag{display:inline-block;background:var(--line);border-radius:6px;padding:.1rem .5rem;font-size:.85rem;color:var(--mut)}
+.say{background:var(--bg);border-left:4px solid var(--red);padding:.5rem .8rem;border-radius:0 8px 8px 0;margin:.4rem 0}
+.say.A{border-color:var(--navy)}
+table{width:100%;border-collapse:collapse;font-size:.95rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:.5rem;text-align:left;vertical-align:top}
+th{background:var(--navy);color:var(--bg)}
+li{margin:.25rem 0}
+a{color:var(--navy);font-weight:600}
+label.ck{display:flex;gap:.6rem;align-items:flex-start;margin:.4rem 0}
+input[type=checkbox]{width:1.2rem;height:1.2rem;margin-top:.25rem}
+input[type=text]{font:inherit;padding:.3rem;border:0;border-bottom:2px dotted var(--mut);background:transparent;color:var(--ink);width:100%}
+input.g{width:6rem;display:inline-block;text-align:center}
+details{margin:.6rem 0}
+.fab{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:9;background:var(--red);color:#fff;border:0;border-radius:999px;padding:.8rem 1.1rem;font:inherit;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.3);cursor:pointer}
+#vid{position:fixed;right:1rem;bottom:calc(4.6rem + env(safe-area-inset-bottom,0px));z-index:9;width:min(320px,calc(100% - 2rem));max-height:60vh;overflow:auto;background:var(--card);border:2px solid var(--red);border-radius:14px;padding:.8rem 1rem;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+#vid[hidden]{display:none}
+#vid ul{padding:0;margin:0}#vid li{list-style:none;margin:.4rem 0}
+.btn{border:1px solid var(--navy);background:transparent;color:var(--navy);border-radius:8px;padding:.5rem .9rem;font:inherit;font-weight:700;cursor:pointer}
+body.dys{font-family:Verdana,Tahoma,sans-serif;font-size:19px;line-height:1.9;letter-spacing:.04em;word-spacing:.12em;background:#fdf6e3;color:#1c2438}body.dys h1,body.dys h2,body.dys h3{font-family:Verdana,Tahoma,sans-serif}body.dys .card,body.dys .say{background:#fffdf5;color:#1c2438}body.dys table{font-size:1rem}
+body.tdah input[type=checkbox]{width:1.7rem;height:1.7rem}body.tdah label.ck{padding:.45rem 0}body.tdah .card{border-width:2px}
+@media print{header,nav,.lv,.fab,#vid,.btn,.awning{display:none!important}main>section{display:none!important}main>#fiche{display:block!important}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="awning"></div>
+<header>
+<svg viewBox="0 0 96 90" role="img" aria-label="Dessin d'une boutique avec auvent rayé"><rect x="8" y="30" width="80" height="56" rx="4" fill="#f6efe2" stroke="#1f3a5f" stroke-width="3"/><path d="M4 30h88l-6-20H10z" fill="#c0392b" stroke="#1f3a5f" stroke-width="3"/><path d="M26 10l-4 20M42 10l-2 20M58 10l2 20M74 10l4 20" stroke="#f6efe2" stroke-width="5"/><rect x="14" y="42" width="30" height="26" rx="2" fill="#bfe0f2" stroke="#1f3a5f" stroke-width="2.5"/><rect x="56" y="44" width="24" height="42" rx="2" fill="#1f3a5f"/><circle cx="62" cy="66" r="2" fill="#e8b04a"/></svg>
+<div><h1>May I help you?</h1><p id="sub"></p></div>
+</header>
+<div class="lv" id="lv" role="group" aria-label="Niveau">
+<button data-l="A2" aria-pressed="true">Niveau A2</button><button data-l="B1" aria-pressed="false">Niveau B1</button><button data-l="B2" aria-pressed="false">Niveau B2</button>
+</div>
+<div class="lv" style="flex-wrap:wrap"><button id="dys" aria-pressed="false">Version adaptée dys</button><button id="tdah" aria-pressed="false">Version TDAH et dyspraxie</button></div>
+<nav><div role="tablist" id="tabs">
+<button role="tab" aria-selected="true" data-t="seances">Séances</button>
+<button role="tab" aria-selected="false" data-t="pair">Pair work</button>
+<button role="tab" aria-selected="false" data-t="ecrit">Évaluation écrit</button>
+<button role="tab" aria-selected="false" data-t="oral">Évaluation oral</button>
+<button role="tab" aria-selected="false" data-t="ccf">Préparation CCF</button>
+<button role="tab" aria-selected="false" data-t="fiche">Fiche élève</button>
+</div></nav>
+<main id="m"></main>
+
+<div id="vid" hidden>
+<h3>Vidéos et écoutes</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xEtBnHqbGU4">Going Shopping, dialogue en magasin (1 min 31, A2)</a></li>
+<li><a target="_blank" rel="noopener" href="https://learnenglishteens.britishcouncil.org/skills/speaking/a1-speaking/shop">British Council, At the shop (A1, transcription)</a></li>
+<li><a target="_blank" rel="noopener" href="https://learnenglishteens.britishcouncil.org/skills/speaking/a2-speaking/buying-new-shoes">British Council, Buying new shoes (A2, vidéo interactive)</a></li>
+<li><a target="_blank" rel="noopener" href="https://learnenglishteens.britishcouncil.org/skills/listening/a2-listening/shopping-clothes">British Council, Shopping for clothes (A2, exercices)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.teachingenglish.org.uk/teaching-resources/teaching-adults/activities/intermediate-b1/returning-goods-shop">British Council, Returning goods to a shop (A2-B1, audio)</a></li>
+<li><a target="_blank" rel="noopener" href="https://ellii.com/lesson/1718-returning-an-item">Ellii, Returning an Item (A2-B1)</a></li>
+<li><a target="_blank" rel="noopener" href="https://pedagogie-archive.ac-orleans-tours.fr/fileadmin/user_upload/anglaisLP/dossier_ressources/shop_roles.pdf">BBC et British Council, cartes de réclamation (B1-B2)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.engvid.com/learn-english-for-call-centers-and-customer-service-jobs/">EngVid, English for customer service (B1-B2)</a></li>
+<li><a target="_blank" rel="noopener" href="https://learnenglishteens.britishcouncil.org/topics/clothes/term">British Council, thème Clothes, Camden Fashion</a></li>
+</ul>
+</div>
+<button class="fab" id="fab" aria-expanded="false">▶ Vidéos</button>
+
+<script>
+var L={
+A2:{sub:"Anglais, bac pro Métiers du commerce et de la vente. Niveau A2. 5 séances.",
+task:"Jouer et filmer une scène de vente simple en magasin : accueil, conseil, encaissement (2 minutes).",
+s:[["🏪","Welcome to the shop","Nommer un magasin, ses rayons, sa vitrine.","Observer des photos de vitrines. Décrire à deux : There is / There are.","Carte mentale légendée du magasin idéal."],
+["🤝","Greeting a customer","Accueillir et prendre congé.","Écoute courte, relevé des formules, jeu de rôle.","6 formules d'accueil apprises."],
+["👗","Describing a product","Décrire un produit : taille, couleur, prix.","Comparatifs : cheaper, bigger. Présenter un produit du catalogue.","Fiche produit illustrée."],
+["💳","Paying and complaints","Encaisser, rendre la monnaie, gérer une réclamation simple.","Modes de paiement, échange, remboursement, excuses.","Mini dialogue écrit à deux."],
+["🎬","Final task","Enchaîner toute la vente sans lire.","Préparation, tournage au téléphone, visionnage.","La vidéo, déposée sur l'ENT."]],
+d:[["Dialogue 1. At the door",["A|Good morning! Can I help you?","B|I'm just looking, thanks.","A|No problem. Just let me know if you need anything."]],
+["Dialogue 2. Size and colour",["B|Do you have this T-shirt in a medium?","A|Let me check. We have it in blue and in black.","B|The blue one, please. How much is it?","A|It's twenty-five euros."]],
+["Dialogue 3. Complaint",["B|I bought this yesterday but it doesn't work.","A|I'm very sorry. Do you have your receipt?","B|Yes, here it is.","A|I can give you a refund or an exchange."]]],
+dn:"Rejouer en changeant 3 éléments : produit, prix, problème.",
+w:{t:"SALE! 30% off all jackets. Open Monday to Saturday, 9 am to 6 pm. Free returns within 14 days.",q:["The shop is open on Sunday.","Jackets are cheaper.","You can return an item after one month."],c:"Un client écrit : My order arrived broken. Répondre par un mail de 60 à 80 mots : s'excuser, proposer une solution, saluer.",ad:"mail à trous avec banque de mots, police agrandie, 2 consignes par page."},
+o:["5 minutes en interaction, rôles échangés.",[["Interaction","Répond à des questions simples","Relance, reformule"],["Lexique du commerce","Mots de base","Précis et varié"],["Correction","Erreurs sans gêner","Phrases fiables"],["Prononciation","Compréhensible","Intonation naturelle"]],"A2","Vers B1"],
+c:{p:["Séance 2 : interaction courte.","Séance 4 : écrit chronométré (20 min).","Séance 5 : oral blanc filmé."],k:["J'accueille et je prends congé sans notes.","Je connais 10 mots du magasin.","Je sais demander de répéter : Sorry, could you repeat?","J'ai relu mon mail avec la grille."],tip:"Mieux vaut une phrase simple et juste qu'une longue phrase fausse."},
+f:{v:[["customer","client"],["price","prix"],["receipt","ticket de caisse"],["refund","remboursement"],["size","taille"],["shop window","vitrine"]],p:["Can I help you?","How much is it?","I'd like a refund, please.","I'm sorry for the problem."],bank:"help, size, black, take, cash, receipt",g:["A|Can I # you?","B|Do you have this jumper in another colour?","A|Yes, in blue and #. What # are you?","B|Medium. I'll # the black one.","A|Card or #?","B|Cash. Can I have a #, please?"],ans:"help, black, size, take, cash, receipt",can:["J'accueille un client.","Je décris un produit.","J'encaisse.","Je réponds à une réclamation."]}},
+B1:{sub:"Anglais, bac pro Métiers du commerce et de la vente. Niveau B1. 5 séances.",
+task:"Jouer et filmer une vente conseil avec une objection sur le prix, puis une réclamation (3 minutes).",
+s:[["🪟","Shop windows and displays","Décrire et comparer deux vitrines, donner son avis.","Comparer deux magasins en justifiant : I prefer... because...","Mini présentation orale de 1 minute."],
+["🔎","Finding out what customers need","Poser des questions ouvertes pour cerner un besoin.","What are you looking for? What's the occasion? What's your budget?","Fiche de questions et jeu de rôle."],
+["🛍️","Advising and persuading","Recommander et argumenter.","I'd suggest... It's worth it because... Gérer l'objection : It's too expensive.","Argumentaire écrit de 5 phrases."],
+["🧾","Returns and complaints","Raconter un problème au passé et obtenir une solution.","I bought it last week and it stopped working. Refund, exchange, credit note.","Réclamation écrite et orale."],
+["🎬","Final task","Enchaîner conseil, objection, réclamation.","Préparation, tournage, visionnage critique en classe.","La vidéo et une auto-évaluation."]],
+d:[["Dialogue 1. Finding the need",["A|Good afternoon. What are you looking for today?","B|A present for my sister. Her birthday is next week.","A|Lovely. What does she like, and what's your budget?","B|She loves sport. About fifty euros."]],
+["Dialogue 2. Price objection",["B|It's nice, but it's a bit expensive.","A|I understand. It's more expensive, but it lasts longer.","B|Do you have anything cheaper?","A|This one is thirty euros. It's less durable, but very popular."]],
+["Dialogue 3. Complaint",["B|I bought these headphones last week and the sound is terrible.","A|I'm sorry to hear that. Have you got the receipt?","B|Yes. I'd like a refund, please.","A|I can offer an exchange or a credit note. A refund is possible within seven days."]]],
+dn:"Rejouer sans notes en ajoutant une relance et une justification.",
+w:{t:"Customer review: I ordered a jacket online. It arrived late and the zip was broken. I contacted the shop twice but nobody answered. I will not buy here again.",q:["When did the jacket arrive?","What was wrong with it?","What did the customer do?"],c:"Répondre à cet avis au nom de la boutique, en 90 à 110 mots : s'excuser, expliquer, proposer une solution, rassurer.",ad:"modèle de réponse à compléter et banque de connecteurs."},
+o:["6 minutes : présentation d'un produit (1 min), puis interaction de vente avec objection.",[["Interaction","Réagit à l'objection","Mène l'échange"],["Argumentation","Donne une raison","Justifie et nuance"],["Lexique et temps","Passé et présent fiables","Variété de structures"],["Prononciation","Claire","Naturelle et fluide"]],"B1","B1 solide"],
+c:{p:["Séance 3 : entraînement à l'argumentation.","Séance 4 : réponse écrite chronométrée (30 min).","Séance 5 : oral blanc filmé avec feedback."],k:["Je pose 3 questions ouvertes au client.","Je réponds à une objection avec une raison.","Je raconte un problème au passé.","J'ai relu mon mail avec la grille."],tip:"Une raison simple vaut mieux qu'une phrase compliquée."},
+f:{v:[["budget","budget"],["warranty","garantie"],["in stock","en stock"],["out of stock","en rupture"],["credit note","avoir"],["discount","remise"]],p:["What are you looking for?","I'd suggest this one.","It's worth the price because...","I'm afraid we are out of stock."],bank:"stopped, receipt, refund, exchange, suggest, budget",g:["A|What's your # for this?","B|About forty euros. I'd like something durable.","A|I # this model. It's reliable.","B|I bought a similar one and it # working.","A|Do you have the #?","B|Yes. I'd prefer a #, please."],ans:"budget, suggest, stopped, receipt, refund",can:["Je cerne le besoin du client.","Je recommande et j'argumente.","Je réponds à une objection.","Je traite une réclamation."]}},
+B2:{sub:"Anglais, bac pro Métiers du commerce et de la vente. Niveau B2. 5 séances.",
+task:"Mener une simulation complète : pitch produit, vente avec argumentation, puis réclamation difficile avec négociation (5 minutes, filmée).",
+s:[["🏷️","Brand image and shop concept","Analyser le concept d'une enseigne et le présenter.","Comparer deux enseignes : cible, ambiance, positionnement prix.","Exposé de 2 minutes."],
+["👂","Active listening","Reformuler, relancer, repérer l'implicite.","So what you need is... Could you tell me more about...?","Grille d'écoute active."],
+["📈","Selling strategy","Vendre plus et mieux : conseil, vente additionnelle, objections.","If I were you, I'd... It would suit you better. Upselling poli.","Argumentaire commercial de 10 phrases."],
+["⚖️","Complaints and negotiation","Gérer un client mécontent, négocier un geste commercial.","Registre soutenu, hypothèses : If you could..., we would be happy to...","Mail formel de réponse."],
+["🎬","Final task","Enchaîner pitch, vente, réclamation.","Préparation, tournage, débrief critique en groupe.","Vidéo et bilan argumenté."]],
+d:[["Dialogue 1. Upselling",["A|That laptop is a good choice. May I suggest a protective case? It would extend its life considerably.","B|Hmm, I hadn't planned to spend more.","A|Of course. If I were you, I'd consider the warranty instead; it covers accidental damage.","B|That sounds reasonable. How much is it?"]],
+["Dialogue 2. Negotiating",["B|Given that the box is damaged, could you do anything on the price?","A|I'm afraid I can't change the price, but I could offer a free accessory.","B|I'd rather have ten percent off.","A|Let me check with my manager. I'm sure we can find a compromise."]],
+["Dialogue 3. Angry customer",["B|This is the third time my order has been delayed. It's unacceptable.","A|You're absolutely right, and I sincerely apologise. Let me find out what happened.","B|I want compensation.","A|I understand. I can refund the delivery and offer a voucher for your next purchase."]]],
+dn:"Rejouer en visant un ton professionnel et une résolution gagnant-gagnant.",
+w:{t:"Return policy: items may be returned within 30 days if unused and in original packaging. Sale items can be exchanged but not refunded. Delivery costs are not refundable unless the item is faulty.",q:["Can a customer get a refund on a sale item?","When are delivery costs refunded?","What conditions apply to a return?"],c:"Rédiger un mail formel de 140 à 160 mots en réponse à un client mécontent d'un article soldé : cadrer la politique, empathie, solution, ton diplomatique.",ad:"plan en 4 paragraphes fourni et formules de politesse."},
+o:["8 minutes : pitch de 2 minutes, simulation de vente, gestion d'une réclamation difficile.",[["Interaction","Gère l'imprévu","Négocie avec aisance"],["Argumentation","Structure claire","Nuance et persuade"],["Registre et lexique","Registre adapté","Précision professionnelle"],["Correction et fluidité","Peu d'erreurs","Naturel, auto-corrections"]],"B1+","B2"],
+c:{p:["Séance 3 : entraînement à l'argumentation chronométrée.","Séance 4 : mail formel en 40 minutes.","Séance 5 : oral blanc filmé et feedback par les pairs."],k:["Je reformule le besoin du client.","Je négocie un compromis poli.","J'utilise un registre formel à l'écrit.","Je m'auto-corrige à l'oral."],tip:"La clarté et le ton comptent autant que la quantité de langue."},
+f:{v:[["upselling","vente additionnelle"],["loyalty card","carte de fidélité"],["compensation","dédommagement"],["voucher","bon d'achat"],["to handle an objection","traiter une objection"],["to apologise","s'excuser"]],p:["May I suggest...?","If I were you, I'd...","I fully understand your frustration.","We would be happy to offer..."],bank:"suggest, warranty, apologise, compensation, voucher, compromise",g:["A|May I # an extended #?","B|I hadn't planned that.","A|I completely understand. Let me # for the delay.","B|I expect #.","A|We can offer a #.","B|Let's find a #."],ans:"suggest, warranty, apologise, compensation, voucher, compromise",can:["Je reformule pour vérifier.","Je négocie un compromis.","Je rédige un mail formel.","Je mène une simulation complète."]}}
+};
+var dys=false,tdah=false,Y={A2:{st:["Dear customer,","I'm sorry for the problem.","I can give you a refund or an exchange.","Best regards,"],om:["Good morning. Can I help you?","How much is it?","I'd like a refund, please.","Thank you. Goodbye!"]},B1:{st:["Dear customer,","Thank you for your message.","I'm sorry that...","We can offer you...","Best regards,"],om:["What are you looking for?","I'd suggest this one because...","I understand, but...","I'd like a refund, please."]},B2:{st:["Dear Sir or Madam,","Thank you for contacting us.","We sincerely apologise for...","Our policy states that...","We would be happy to offer...","Yours faithfully,"],om:["So what you need is...","If I were you, I'd...","I fully understand your frustration.","Let's find a compromise."]}};
+var lvl="A2",tab="seances",m=document.getElementById("m");
+function say(x){var p=x.split("|");return '<div class="say '+(p[0]==="A"?"A":"")+'"><b>'+(p[0]==="A"?"Vendeur":"Client")+' :</b> '+p[1]+'</div>'}
+function gap(x){var p=x.split("|"),n=0;return '<div class="say '+(p[0]==="A"?"A":"")+'"><b>'+(p[0]==="A"?"Vendeur":"Client")+' :</b> '+p[1].replace(/#/g,function(){n++;return '<input class="g" type="text" aria-label="trou">'})+'</div>'}
+function render(){var D=L[lvl],h="";
+document.getElementById("sub").textContent=D.sub;
+h+='<section id="seances"'+(tab=="seances"?"":" hidden")+'><p><b>Tâche finale :</b> '+D.task+'</p>'+D.s.map(function(s,i){return '<div class="card"><h3><span class="ic">'+s[0]+'</span>Séance '+(i+1)+'. '+s[1]+'</h3><p><b>Objectif :</b> '+s[2]+'</p><p>'+s[3]+'</p><p><span class="tag">Trace</span> '+s[4]+'</p></div>'}).join("")+'<p>Le bouton <b>Vidéos</b> ouvre les liens d\'écoute.</p></section>';
+h+='<section id="pair"'+(tab=="pair"?"":" hidden")+'><h2>Pair work</h2><p>Binômes A (vendeur) et B (client). On échange les rôles.</p>'+D.d.map(function(d){return '<div class="card"><h3>'+d[0]+'</h3>'+d[1].map(say).join("")+'</div>'}).join("")+'<p><b>Consigne :</b> '+D.dn+'</p></section>';
+h+='<section id="ecrit"'+(tab=="ecrit"?"":" hidden")+'><h2>Évaluation écrit</h2><div class="card"><h3>Tâche 1. Compréhension</h3><p>Lire : '+D.w.t+'</p><ul>'+D.w.q.map(function(q){return '<li>'+q+'</li>'}).join("")+'</ul></div><div class="card"><h3>Tâche 2. Expression écrite</h3><p>'+D.w.c+'</p></div><table><tr><th>Critère</th><th>Acquis</th><th>En cours</th></tr><tr><td>Je réponds à la consigne</td><td></td><td></td></tr><tr><td>Mon argumentation est claire</td><td></td><td></td></tr><tr><td>Mes phrases sont correctes</td><td></td><td></td></tr><tr><td>Je respecte le format</td><td></td><td></td></tr></table><p><b>Version adaptée :</b> '+D.w.ad+'</p></section>';
+h+='<section id="oral"'+(tab=="oral"?"":" hidden")+'><h2>Évaluation oral</h2><p><b>Épreuve :</b> '+D.o[0]+'</p><table><tr><th>Critère</th><th>'+D.o[2]+'</th><th>'+D.o[3]+'</th></tr>'+D.o[1].map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td></tr>'}).join("")+'</table><p><b>Auto-évaluation :</b> après visionnage, entourer un niveau par critère et fixer 1 objectif.</p></section>';
+h+='<section id="ccf"'+(tab=="ccf"?"":" hidden")+'><h2>Préparation au CCF</h2><p>Cette séquence entraîne aux compétences évaluées en CCF. Vérifier le cadre exact de votre académie.</p><div class="card"><h3>Parcours d\'entraînement</h3><ul>'+D.c.p.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul></div><div class="card"><h3>Check-list</h3>'+D.c.k.map(function(x){return '<label class="ck"><input type="checkbox">'+x+'</label>'}).join("")+'</div><p><b>Conseil :</b> '+D.c.tip+'</p></section>';
+var F=D.f;
+h+='<section id="fiche"'+(tab=="fiche"?"":" hidden")+'><h2>Fiche élève ('+lvl+')</h2><p>Nom : <input type="text" aria-label="Nom"></p><h3>Mon vocabulaire</h3><table><tr><th>English</th><th>Français</th><th>Ma phrase</th></tr>'+F.v.map(function(v){return '<tr><td>'+v[0]+'</td><td>'+v[1]+'</td><td></td></tr>'}).join("")+'</table><h3>Phrases à retenir</h3><ul>'+F.p.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><h3>Exercice. Texte à trous</h3><p>Complète avec : <b>'+F.bank+'</b></p>'+F.g.map(gap).join("")+'<details><summary>Corrigé pour le professeur</summary><p>'+F.ans+'.</p></details><h3>Je sais faire</h3>'+F.can.map(function(x){return '<label class="ck"><input type="checkbox">'+x+'</label>'}).join("")+'<p><button class="btn" onclick="window.print()">Imprimer la fiche</button></p></section>';
+m.innerHTML=h;
+if(tdah){var add2=function(id,t,items,note){document.getElementById(id).insertAdjacentHTML("beforeend","<div class='card'><h3>"+t+"</h3>"+items.map(function(x){return "<label class='ck'><input type='checkbox'>"+x+"</label>"}).join("")+"<p>"+note+"</p></div>")};
+add2("seances","Aide TDAH et dyspraxie",["Je lis l'objectif de la séance","Je fais l'activité (10 minutes)","Pause active de 2 minutes","Je remplis ma trace"],"La séance est découpée en blocs de 10 minutes, avec une seule consigne affichée. L'élève peut être chronométreur.");
+add2("pair","Aide TDAH et dyspraxie",["Je connais mon rôle (vendeur, client ou chronométreur)","Je joue un seul dialogue à la fois","Je change de rôle à la fin"],"Déplacement autorisé pour jouer la scène. Cartes imprimées plutôt que recopiées.");
+add2("ecrit","Aide TDAH et dyspraxie",["Je lis la consigne et je la surligne","Je note 3 mots clés","J'écris mon plan en 3 lignes","J'écris mon texte","Je relis un critère à la fois avec la grille"],"Une consigne par page, lignes espacées, temps majoré. En dyspraxie : texte à trous ou réponse tapée plutôt qu'écrite.");
+add2("oral","Aide TDAH et dyspraxie",["Je prépare 4 cartes de mots clés","Je m'entraîne 2 fois à voix haute","Je respire avant de commencer"],"Les cartes restent sous les yeux pendant l'épreuve.");
+document.getElementById("fiche").insertAdjacentHTML("beforeend","<div class='card'><h3>Mon organisation</h3><p>Mon matériel : <input type='text' aria-label='materiel'></p><p>Ce que je fais en premier : <input type='text' aria-label='premier'></p><p>Ma pause : <input type='text' aria-label='pause'></p></div>")}
+if(dys){var Yd=Y[lvl];var add=function(id,html){document.getElementById(id).insertAdjacentHTML("beforeend","<div class='card'>"+html+"</div>")};var li=function(a){return "<ul>"+a.map(function(x){return "<li>"+x+"</li>"}).join("")+"</ul>"};
+add("seances","<h3>Aide dys</h3><p>Feuilles aérées, un mot illustré par image, police sans empattement. L'enregistrement audio peut remplacer l'écrit.</p>");
+add("pair","<h3>Aide dys</h3><p>Une réplique par carte, lue dans l'ordre. On apprend par l'écoute et la répétition, sans copier.</p>");
+add("ecrit","<h3>Aide dys</h3><p><b>Étapes :</b> je lis, je surligne les mots clés, je choisis mes phrases de départ, j'écris une phrase par ligne, je relis en suivant avec le doigt.</p><p><b>Phrases de départ :</b></p>"+li(Yd.st)+"<p><span class='tag'>Temps</span> majoré d'un tiers, une consigne par page.</p>");
+add("oral","<h3>Aide-mémoire dys</h3>"+li(Yd.om)+"<p>Je peux garder cette fiche sous les yeux.</p>");
+add("fiche","<h3>Aide dys</h3><p>Je lis chaque phrase à voix haute avant d'écrire. Je coche chaque mot de la banque quand je l'ai utilisé.</p>"+D.f.bank.split(", ").map(function(w){return "<label class='ck'><input type='checkbox'>"+w+"</label>"}).join(""))}}
+document.querySelectorAll("#lv button").forEach(function(b){b.addEventListener("click",function(){lvl=b.dataset.l;document.querySelectorAll("#lv button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});render()})});
+document.querySelectorAll("#tabs button").forEach(function(b){b.addEventListener("click",function(){tab=b.dataset.t;document.querySelectorAll("#tabs button").forEach(function(x){x.setAttribute("aria-selected",x===b)});render();window.scrollTo(0,0)})});
+var fab=document.getElementById("fab"),v=document.getElementById("vid");
+fab.addEventListener("click",function(){v.hidden=!v.hidden;fab.setAttribute("aria-expanded",!v.hidden)});
+document.getElementById("dys").addEventListener("click",function(){dys=!dys;document.body.classList.toggle("dys",dys);this.setAttribute("aria-pressed",dys);render()});
+document.getElementById("tdah").addEventListener("click",function(){tdah=!tdah;document.body.classList.toggle("tdah",tdah);this.setAttribute("aria-pressed",tdah);render()});
+render();
+</script>
+<footer style="text-align:center;padding:1em;font-size:.9em;color:#555">Madame Carole Paoli Pompougnac · IP · gratuit</footer>
+</body>
+</html>
