@@ -172,5 +172,5 @@ document.getElementById("tdah").addEventListener("click",function(){tdah=!tdah;d
 render();
 </script>
 <footer style="text-align:center;padding:1em;font-size:.9em;color:#555">Madame Carole Paoli Pompougnac · IP · gratuit</footer>
-</body>
+<script>/* ouvrir le bon onglet via #ancre */(function(){function f(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;h.split('-').forEach(function(k){var b=document.querySelector('#lv button[data-l="'+k+'"],#tabs button[data-t="'+k+'"]');if(b)b.click();});var m=/^s(\d+)$/.exec(h);if(m&&typeof go==='function'){go(+m[1]);window.scrollTo(0,0);return;}var e=document.getElementById(h);if(!e)return;if(typeof goTo==='function'&&e.closest('.pane')){var p=e.closest('.pane');goTo(p.id,p===e?null:h);return;}if(typeof show==='function'){var S=[].slice.call(document.querySelectorAll('section')),n=S.indexOf(e.closest('section'));if(n>=0)show(n);}}window.addEventListener('hashchange',f);if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f();})();</script></body>
 </html>
