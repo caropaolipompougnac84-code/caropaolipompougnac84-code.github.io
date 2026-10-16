@@ -493,4 +493,6 @@ document.querySelectorAll('.cor').forEach(function(b){var t=b.textContent;b.addE
 var r=b.nextElementSibling;r.hidden=!r.hidden;b.textContent=r.hidden?t:'Cacher';});});
 function goTo(id,a){var b=document.querySelector('#tabs button[data-p="'+id+'"]');if(b)b.click();if(a){var e=document.getElementById(a);if(e)setTimeout(function(){e.scrollIntoView()},30);}}
 document.querySelectorAll('[data-go]').forEach(function(b){b.addEventListener('click',function(){goTo(b.dataset.go,b.dataset.a)});});
+function fromHash(){var h=decodeURIComponent(location.hash.slice(1));if(!h)return;var e=document.getElementById(h);if(!e)return;if(e.classList.contains('pane')){goTo(h);return;}var p=e.closest('.pane');if(p)goTo(p.id,h);}
+window.addEventListener('hashchange',fromHash);fromHash();
 </script></body></html>
